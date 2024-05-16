@@ -1,0 +1,1803 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  10 MAY 2024 22:21
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/tosik/latex/fls/matan2.tex
+(/home/tosik/latex/fls/matan2.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+ (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+Now handling font encoding T2A ...
+... processing UTF-8 mapping file for font encoding T2A
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t2aenc.dfu
+File: t2aenc.dfu 2021/06/21 v1.2n UTF-8 support
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0407 (decimal 1031)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0457 (decimal 1111)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0490 (decimal 1168)
+   defining Unicode char U+0491 (decimal 1169)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+0498 (decimal 1176)
+   defining Unicode char U+0499 (decimal 1177)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049C (decimal 1180)
+   defining Unicode char U+049D (decimal 1181)
+   defining Unicode char U+04A0 (decimal 1184)
+   defining Unicode char U+04A1 (decimal 1185)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AA (decimal 1194)
+   defining Unicode char U+04AB (decimal 1195)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B0 (decimal 1200)
+   defining Unicode char U+04B1 (decimal 1201)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04B8 (decimal 1208)
+   defining Unicode char U+04B9 (decimal 1209)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D4 (decimal 1236)
+   defining Unicode char U+04D5 (decimal 1237)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 112.
+ (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count193
+\U@D=\dimen139
+\l@unhyphenated=\language12
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count194
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
+File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
+Language: russian 2020/09/09 1.3k Russian support for the Babel system
+Package babel Info: Making " an active character on input line 124.
+Package babel Info: Default for \cyrdash is provided on input line 163.
+) (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen140
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count195
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count196
+\leftroot@=\count197
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count198
+\DOTSCASE@=\count199
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count266
+\c@MaxMatrixCols=\count267
+\dotsspace@=\muskip16
+\c@parentequation=\count268
+\dspbrk@lvl=\count269
+\tag@help=\toks19
+\row@=\count270
+\column@=\count271
+\maxfields@=\count272
+\andhelp@=\toks20
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count273
+\Gm@cntv=\count274
+\c@Gm@tempcnt=\count275
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks24
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box52
+\beforetitleunit=\skip52
+\aftertitleunit=\skip53
+\ttl@plus=\dimen157
+\ttl@minus=\dimen158
+\ttl@toksa=\toks25
+\titlewidth=\dimen159
+\titlewidthlast=\dimen160
+\titlewidthfirst=\dimen161
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen162
+\Hy@linkcounter=\count276
+\Hy@pagecounter=\count277
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel languages
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count278
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 3167.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count279
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen163
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count280
+\Field@Width=\dimen164
+\Fld@charsize=\dimen165
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count281
+\c@Item=\count282
+\c@Hfootnote=\count283
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count284
+\c@bookmark@seq@number=\count285
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip54
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 40.
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count286
+\l__pdf_internal_box=\box53
+) (./matan2.aux)
+\openout1 = `matan2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Info: Redefining \th on input line 51.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 773.91498pt, 42.67912pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=540.60239pt
+* \textheight=773.91498pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-80.81725pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 51.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count287
+)
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
+\@outlinefile=\write3
+\openout3 = `matan2.out'.
+
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count288
+\scratchdimen=\dimen166
+\scratchbox=\box54
+\nofMPsegments=\count289
+\nofMParguments=\count290
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count291
+\MPscratchDim=\dimen167
+\MPnumerator=\count292
+\makeMPintoPDFobject=\count293
+\everyMPtoPDFconversion=\toks27
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+\tf@toc=\write4
+\openout4 = `matan2.toc'.
+
+ [2]
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 63.
+ [3] [4] [5] [6] [7] [8] [9] [10] [11]
+/home/tosik/latex/fls/matan2.tex:527: Undefined control sequence.
+<recently read> \dd 
+                    
+l.527             $\dd
+                      $u = $\pdv{u}{x_1}$(M)$\triangle x_1$ + $\ldots$ + $\p...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:527: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.527             $\dd$u = $\pdv
+                                {u}{x_1}$(M)$\triangle x_1$ + $\ldots$ + $\p...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:527: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.527 ..._1}$(M)$\triangle x_1$ + $\ldots$ + $\pdv
+                                                  {u}{x_m}$(M)$\triangle x_m...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:528: Undefined control sequence.
+<recently read> \dd 
+                    
+l.528 ...Å–∏–º—ã–µ –ø–µ—Ä–µ–º–µ–Ω–Ω—ã–µ, —Ç–æ $\dd
+                                                   x_i$ =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:530: Undefined control sequence.
+<recently read> \dd 
+                    
+l.530             $\dd
+                       u$ = $\pdv{u}{x_1}$(M)$\dd x_1$ + $\ldots$ + $\pdv{u}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:530: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.530             $\dd u$ = $\pdv
+                                 {u}{x_1}$(M)$\dd x_1$ + $\ldots$ + $\pdv{u}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:530: Undefined control sequence.
+<recently read> \dd 
+                    
+l.530             $\dd u$ = $\pdv{u}{x_1}$(M)$\dd
+                                                  x_1$ + $\ldots$ + $\pdv{u}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:530: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.530 ...v{u}{x_1}$(M)$\dd x_1$ + $\ldots$ + $\pdv
+                                                  {u}{x_m}$(M)$\dd x_m$ =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:530: Undefined control sequence.
+<recently read> \dd 
+                    
+l.530 ...d x_1$ + $\ldots$ + $\pdv{u}{x_m}$(M)$\dd
+                                                   x_m$ =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:531: Undefined control sequence.
+l.531             $\sum\limits_{j = 1}^{m} \pdv
+                                               {u}{x_j} \dd x_j$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:531: Undefined control sequence.
+l.531 ...$\sum\limits_{j = 1}^{m} \pdv{u}{x_j} \dd
+                                                   x_j$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[12]
+/home/tosik/latex/fls/matan2.tex:557: Undefined control sequence.
+<recently read> \dd 
+                    
+l.557             $\dd
+                      $u –ø—Ä–∏ —Å–ª–µ–¥—É—é—â–∏—Ö —É—Å–ª–æ–≤–∏—è—Ö:\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:558: Undefined control sequence.
+<recently read> \dd 
+                    
+l.558             1. $\dd
+                         $u —Ä–∞—Å—Å–º–∞—Ç—Ä–∏–≤–∞–µ—Ç—Å—è –∫–∞–∫ —Ñ—É–Ω–∫—Ü...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:559: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.559 ...∏ –¥–∏—Ñ—Ñ–µ—Ä–µ–Ω—Ü–∏–∞–ª–æ–≤ –æ—Ç $\pdv
+                                                  {u}{x_1}$($x_1, \ldots, x_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:560: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.560             $\ldots$, $\pdv
+                                 {u}{x_m}$($x_1, \ldots, x_m$)\newline –ø—Ä–...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:562: Undefined control sequence.
+<recently read> \dd 
+                    
+l.562 ...±–µ—Ä—É—Ç—Å—è —Ä–∞–≤–Ω—ã–º–∏\newline $\dd
+                                                   x_1, \ldots, \dd x_m$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:562: Undefined control sequence.
+l.562 ...∞–≤–Ω—ã–º–∏\newline $\dd x_1, \ldots, \dd
+                                                   x_m$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:564: Undefined control sequence.
+l.564             ${\dd
+                       }^2 u = \dd(\dd u)$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:564: Undefined control sequence.
+l.564             ${\dd}^2 u = \dd
+                                  (\dd u)$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:564: Undefined control sequence.
+l.564             ${\dd}^2 u = \dd(\dd
+                                       u)$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:570: Undefined control sequence.
+<recently read> \dd 
+                    
+l.570             $\dd
+                      $u –ø—Ä–∏ —Å–ª–µ–¥—É—é—â–∏—Ö —É—Å–ª–æ–≤–∏—è—Ö:\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:571: Undefined control sequence.
+<recently read> \dd 
+                    
+l.571             1. $\dd
+                         $u —Ä–∞—Å—Å–º–∞—Ç—Ä–∏–≤–∞–µ—Ç—Å—è –∫–∞–∫ —Ñ—É–Ω–∫—Ü...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:575: Undefined control sequence.
+<recently read> \dd 
+                    
+l.575 ...±–µ—Ä—É—Ç—Å—è —Ä–∞–≤–Ω—ã–º–∏\newline $\dd
+                                                   x_1, \ldots, \dd x_m$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:575: Undefined control sequence.
+l.575 ...∞–≤–Ω—ã–º–∏\newline $\dd x_1, \ldots, \dd
+                                                   x_m$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:577: Undefined control sequence.
+l.577             ${\dd
+                       }^n u = \dd({\dd}^(n-1) u)$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:577: Undefined control sequence.
+l.577             ${\dd}^n u = \dd
+                                  ({\dd}^(n-1) u)$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:577: Undefined control sequence.
+l.577             ${\dd}^n u = \dd({\dd
+                                       }^(n-1) u)$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:581: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.581 ...   –í–µ–∫—Ç–æ—Ä grad $\vec{u}(M)$ = $\pdv
+                                                  {u}{x}(M_0) \vec{i}$ + $\p...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:581: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.581 ...}(M)$ = $\pdv{u}{x}(M_0) \vec{i}$ + $\pdv
+                                                  {u}{y}(M_0) \vec{j}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:582: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.582             + $\pdv
+                         {u}{z}(M_0) \vec{k}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[13]
+/home/tosik/latex/fls/matan2.tex:589: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.589             $\pdv
+                       {u}{l}$($M_0$).\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[14]
+/home/tosik/latex/fls/matan2.tex:637: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.637             $\pdv
+                       {u}{t_i}$ = $\pdv{u}{x_1}\cdot \pdv{x_1}{t_i}$ + $\ld...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:637: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.637             $\pdv{u}{t_i}$ = $\pdv
+                                        {u}{x_1}\cdot \pdv{x_1}{t_i}$ + $\ld...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:637: Undefined control sequence.
+l.637 ... $\pdv{u}{t_i}$ = $\pdv{u}{x_1}\cdot \pdv
+                                                  {x_1}{t_i}$ + $\ldots$ +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:638: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.638             $\pdv
+                       {u}{x_m}\cdot \pdv{x_m}{t_i}$ = $\sum\limits_{j = 1}^...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:638: Undefined control sequence.
+l.638             $\pdv{u}{x_m}\cdot \pdv
+                                         {x_m}{t_i}$ = $\sum\limits_{j = 1}^...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:639: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.639             $\pdv
+                       {u}{x_j}\cdot \pdv{x_j}{t_i}$ (i = 1, $\ldots$ , k).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:639: Undefined control sequence.
+l.639             $\pdv{u}{x_j}\cdot \pdv
+                                         {x_j}{t_i}$ (i = 1, $\ldots$ , k).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:645: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.645             $\pdv
+                       {u}{l} (M_0)$ = $\displaystyle{\lim_{\substack{M \rig...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:647: Undefined control sequence.
+<recently read> \dv 
+                    
+l.647 ...     $\frac{\phi(t) - \phi(0)}{t}$ = $\dv
+                                                  {\phi}{t}$ (0).\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:648: Undefined control sequence.
+<recently read> \dv 
+                    
+l.648             $\dv
+                      {\phi}{t}$(0) = $\pdv{u}{x}$($M_0$) $\dv{x}{t}$(0) +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:648: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.648             $\dv{\phi}{t}$(0) = $\pdv
+                                           {u}{x}$($M_0$) $\dv{x}{t}$(0) +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:648: Undefined control sequence.
+<recently read> \dv 
+                    
+l.648 ...v{\phi}{t}$(0) = $\pdv{u}{x}$($M_0$) $\dv
+                                                  {x}{t}$(0) +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:649: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.649             $\pdv
+                       {u}{y}$($M_0$) $\dv{y}{t}$(0) + $\pdv{u}{z}$($M_0$) $...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:649: Undefined control sequence.
+<recently read> \dv 
+                    
+l.649             $\pdv{u}{y}$($M_0$) $\dv
+                                          {y}{t}$(0) + $\pdv{u}{z}$($M_0$) $...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:649: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.649 ...\pdv{u}{y}$($M_0$) $\dv{y}{t}$(0) + $\pdv
+                                                  {u}{z}$($M_0$) $\dv{z}{t}$...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:649: Undefined control sequence.
+<recently read> \dv 
+                    
+l.649 ...$\dv{y}{t}$(0) + $\pdv{u}{z}$($M_0$) $\dv
+                                                  {z}{t}$(0)\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:650: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.650             $\pdv
+                       {u}{l} (M_0)$ = $\pdv{u}{x}$($M_0$)$\cos \alpha$ +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:650: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.650             $\pdv{u}{l} (M_0)$ = $\pdv
+                                            {u}{x}$($M_0$)$\cos \alpha$ +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:651: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.651             $\pdv
+                       {u}{y}$($M_0$)$\cos \beta$ + $\pdv{u}{z}$($M_0$)$\cos...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:651: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.651 ...  $\pdv{u}{y}$($M_0$)$\cos \beta$ + $\pdv
+                                                  {u}{z}$($M_0$)$\cos \gamma$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:655: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.655             $\pdv
+                       {u}{l} (M_0)$ = (grad u($M_0$)$\cdot$ $\vec{l}$) =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:666: Undefined control sequence.
+<recently read> \dd 
+                    
+l.666 ...       - f($x_1^0, \ldots, x_m^0$) = $\dd
+                                                   u|_{N}$ =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:667: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.667             $\pdv
+                       {u}{x_1}(N) \triangle x_1$ + $\ldots$ + $\pdv{u}{x_m}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:667: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.667 ...x_1}(N) \triangle x_1$ + $\ldots$ + $\pdv
+                                                  {u}{x_m}(N) \triangle x_m$...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:672: Undefined control sequence.
+<recently read> \dd 
+                    
+l.672             $\dd
+                      [2] u$ = $\dd (\dd u)$ = $\dd (\pdv{u}{x} \dd x + \pdv...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:672: Undefined control sequence.
+<recently read> \dd 
+                    
+l.672             $\dd[2] u$ = $\dd
+                                    (\dd u)$ = $\dd (\pdv{u}{x} \dd x + \pdv...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:672: Undefined control sequence.
+l.672             $\dd[2] u$ = $\dd (\dd
+                                         u)$ = $\dd (\pdv{u}{x} \dd x + \pdv...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:672: Undefined control sequence.
+<recently read> \dd 
+                    
+l.672 ...        $\dd[2] u$ = $\dd (\dd u)$ = $\dd
+                                                   (\pdv{u}{x} \dd x + \pdv{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:672: Undefined control sequence.
+l.672 ...  $\dd[2] u$ = $\dd (\dd u)$ = $\dd (\pdv
+                                                  {u}{x} \dd x + \pdv{u}{y} ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:672: Undefined control sequence.
+l.672 ...u$ = $\dd (\dd u)$ = $\dd (\pdv{u}{x} \dd
+                                                   x + \pdv{u}{y} \dd y)$ =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:672: Undefined control sequence.
+l.672 ... (\dd u)$ = $\dd (\pdv{u}{x} \dd x + \pdv
+                                                  {u}{y} \dd y)$ =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:672: Undefined control sequence.
+l.672 ...= $\dd (\pdv{u}{x} \dd x + \pdv{u}{y} \dd
+                                                   y)$ =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:673: Undefined control sequence.
+l.673             $\Bigl(\pderivative
+                                     {x}(\pdv{u}{x}) \dd x + \pderivative{y}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:673: Undefined control sequence.
+l.673             $\Bigl(\pderivative{x}(\pdv
+                                             {u}{x}) \dd x + \pderivative{y}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:673: Undefined control sequence.
+l.673 ...   $\Bigl(\pderivative{x}(\pdv{u}{x}) \dd
+                                                   x + \pderivative{y}(\pdv{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:673: Undefined control sequence.
+l.673 ...ative{x}(\pdv{u}{x}) \dd x + \pderivative
+                                                  {y}(\pdv{u}{x})\dd y\Bigr)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:673: Undefined control sequence.
+l.673 ...(\pdv{u}{x}) \dd x + \pderivative{y}(\pdv
+                                                  {u}{x})\dd y\Bigr) \dd x$ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:673: Undefined control sequence.
+l.673 ...}) \dd x + \pderivative{y}(\pdv{u}{x})\dd
+                                                   y\Bigr) \dd x$ +\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:673: Undefined control sequence.
+l.673 ...pderivative{y}(\pdv{u}{x})\dd y\Bigr) \dd
+                                                   x$ +\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:674: Undefined control sequence.
+l.674             + $\Bigl(\pderivative
+                                       {x}(\pdv{u}{y})\dd x + \pderivative{y...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:674: Undefined control sequence.
+l.674             + $\Bigl(\pderivative{x}(\pdv
+                                               {u}{y})\dd x + \pderivative{y...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:674: Undefined control sequence.
+l.674 ...  + $\Bigl(\pderivative{x}(\pdv{u}{y})\dd
+                                                   x + \pderivative{y}(\pdv{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:674: Undefined control sequence.
+l.674 ...vative{x}(\pdv{u}{y})\dd x + \pderivative
+                                                  {y}(\pdv{u}{y})\dd y\Bigr)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:674: Undefined control sequence.
+l.674 ...}(\pdv{u}{y})\dd x + \pderivative{y}(\pdv
+                                                  {u}{y})\dd y\Bigr) \dd y$ =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:674: Undefined control sequence.
+l.674 ...y})\dd x + \pderivative{y}(\pdv{u}{y})\dd
+                                                   y\Bigr) \dd y$ =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:674: Undefined control sequence.
+l.674 ...pderivative{y}(\pdv{u}{y})\dd y\Bigr) \dd
+                                                   y$ =
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:675: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.675             $\pdv
+                       [2]{u}{x}$ ${(\dd x)}^2$ + 2$\pdv{u}{x}{y} \dd x \dd ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:675: Undefined control sequence.
+l.675             $\pdv[2]{u}{x}$ ${(\dd
+                                         x)}^2$ + 2$\pdv{u}{x}{y} \dd x \dd ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:675: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.675 ...   $\pdv[2]{u}{x}$ ${(\dd x)}^2$ + 2$\pdv
+                                                  {u}{x}{y} \dd x \dd y$ + $...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:675: Undefined control sequence.
+l.675 ...}{x}$ ${(\dd x)}^2$ + 2$\pdv{u}{x}{y} \dd
+                                                   x \dd y$ + $\pdv[2]{u}{y}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:675: Undefined control sequence.
+l.675 ...${(\dd x)}^2$ + 2$\pdv{u}{x}{y} \dd x \dd
+                                                   y$ + $\pdv[2]{u}{y}$ ${(\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:675: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.675 ...2$ + 2$\pdv{u}{x}{y} \dd x \dd y$ + $\pdv
+                                                  [2]{u}{y}$ ${(\dd y)}^2$\n...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:675: Undefined control sequence.
+l.675 ...{y} \dd x \dd y$ + $\pdv[2]{u}{y}$ ${(\dd
+                                                   y)}^2$\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:676: Undefined control sequence.
+<recently read> \dd 
+                    
+l.676             $\dd
+                      [2] u$ = ${(\pderivative{x} \dd x + \pderivative{y} \d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:676: Undefined control sequence.
+l.676             $\dd[2] u$ = ${(\pderivative
+                                              {x} \dd x + \pderivative{y} \d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:676: Undefined control sequence.
+l.676 ...      $\dd[2] u$ = ${(\pderivative{x} \dd
+                                                   x + \pderivative{y} \dd y...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:676: Undefined control sequence.
+l.676 ...= ${(\pderivative{x} \dd x + \pderivative
+                                                  {y} \dd y)}^2$u
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:676: Undefined control sequence.
+l.676 ...derivative{x} \dd x + \pderivative{y} \dd
+                                                   y)}^2$u
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:680: Undefined control sequence.
+<recently read> \dd 
+                    
+l.680             $\dd
+                      [n]$ = $\dd (\dd[n-1] u)$ = ${(\pderivative{x} \dd x +...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:680: Undefined control sequence.
+<recently read> \dd 
+                    
+l.680             $\dd[n]$ = $\dd
+                                  (\dd[n-1] u)$ = ${(\pderivative{x} \dd x +...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:680: Undefined control sequence.
+l.680             $\dd[n]$ = $\dd (\dd
+                                      [n-1] u)$ = ${(\pderivative{x} \dd x +...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:680: Undefined control sequence.
+l.680 ...]$ = $\dd (\dd[n-1] u)$ = ${(\pderivative
+                                                  {x} \dd x + \pderivative{x...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:680: Undefined control sequence.
+l.680 ...dd (\dd[n-1] u)$ = ${(\pderivative{x} \dd
+                                                   x + \pderivative{x} \dd y...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:680: Undefined control sequence.
+l.680 ...= ${(\pderivative{x} \dd x + \pderivative
+                                                  {x} \dd y)}^n$u
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:680: Undefined control sequence.
+l.680 ...derivative{x} \dd x + \pderivative{x} \dd
+                                                   y)}^n$u
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[15]
+/home/tosik/latex/fls/matan2.tex:685: Undefined control sequence.
+<recently read> \dd 
+                    
+l.685             $\dd
+                      [2] u$ = $\dd ( \pdv{f}{u} \dd u + \pdv{f}{v} \dd v)$ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:685: Undefined control sequence.
+<recently read> \dd 
+                    
+l.685             $\dd[2] u$ = $\dd
+                                    ( \pdv{f}{u} \dd u + \pdv{f}{v} \dd v)$ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:685: Undefined control sequence.
+l.685             $\dd[2] u$ = $\dd ( \pdv
+                                          {f}{u} \dd u + \pdv{f}{v} \dd v)$ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:685: Undefined control sequence.
+l.685 ...       $\dd[2] u$ = $\dd ( \pdv{f}{u} \dd
+                                                   u + \pdv{f}{v} \dd v)$ = ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:685: Undefined control sequence.
+l.685 ...dd[2] u$ = $\dd ( \pdv{f}{u} \dd u + \pdv
+                                                  {f}{v} \dd v)$ = $\bigr[\d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:685: Undefined control sequence.
+l.685 ... $\dd ( \pdv{f}{u} \dd u + \pdv{f}{v} \dd
+                                                   v)$ = $\bigr[\dd (\pdv{f}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:685: Undefined control sequence.
+l.685 ...} \dd u + \pdv{f}{v} \dd v)$ = $\bigr[\dd
+                                                   (\pdv{f}{u})\bigl]\dd x$ +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:685: Undefined control sequence.
+l.685 ...u + \pdv{f}{v} \dd v)$ = $\bigr[\dd (\pdv
+                                                  {f}{u})\bigl]\dd x$ +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:685: Undefined control sequence.
+l.685 ...dd v)$ = $\bigr[\dd (\pdv{f}{u})\bigl]\dd
+                                                   x$ +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:686: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.686             $\pdv
+                       {f}{u} \dd[2] x$ + $\bigr[\dd (\pdv{f}{v}) \bigl]\dd ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:686: Undefined control sequence.
+l.686             $\pdv{f}{u} \dd
+                                 [2] x$ + $\bigr[\dd (\pdv{f}{v}) \bigl]\dd ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:686: Undefined control sequence.
+l.686 ...       $\pdv{f}{u} \dd[2] x$ + $\bigr[\dd
+                                                   (\pdv{f}{v}) \bigl]\dd v$...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:686: Undefined control sequence.
+l.686 ... $\pdv{f}{u} \dd[2] x$ + $\bigr[\dd (\pdv
+                                                  {f}{v}) \bigl]\dd v$ + $\p...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:686: Undefined control sequence.
+l.686 ...2] x$ + $\bigr[\dd (\pdv{f}{v}) \bigl]\dd
+                                                   v$ + $\pdv{f}{v} \dd[2] y...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:686: Undefined control sequence.
+<recently read> \pdv 
+                     
+l.686 ...igr[\dd (\pdv{f}{v}) \bigl]\dd v$ + $\pdv
+                                                  {f}{v} \dd[2] y$ =\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:686: Undefined control sequence.
+l.686 ...pdv{f}{v}) \bigl]\dd v$ + $\pdv{f}{v} \dd
+                                                  [2] y$ =\newline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:687: Undefined control sequence.
+l.687             = $\Bigr[ {(\pderivative
+                                          {u} \dd u + \pderivative{v} \dd v)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:687: Undefined control sequence.
+l.687             = $\Bigr[ {(\pderivative{u} \dd
+                                                  u + \pderivative{v} \dd v)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:687: Undefined control sequence.
+l.687 ...r[ {(\pderivative{u} \dd u + \pderivative
+                                                  {v} \dd v)}^2f\Bigl]$ +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:687: Undefined control sequence.
+l.687 ...derivative{u} \dd u + \pderivative{v} \dd
+                                                   v)}^2f\Bigl]$ +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:688: Undefined control sequence.
+l.688             $\Bigr\{ \pdv
+                               {f}{u}\dd[2] u + \pdv{f}{v}\dd[2] v \Bigl\}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:688: Undefined control sequence.
+l.688             $\Bigr\{ \pdv{f}{u}\dd
+                                        [2] u + \pdv{f}{v}\dd[2] v \Bigl\}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:688: Undefined control sequence.
+l.688 ...       $\Bigr\{ \pdv{f}{u}\dd[2] u + \pdv
+                                                  {f}{v}\dd[2] v \Bigl\}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tosik/latex/fls/matan2.tex:688: Undefined control sequence.
+l.688 ...Bigr\{ \pdv{f}{u}\dd[2] u + \pdv{f}{v}\dd
+                                                  [2] v \Bigl\}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (7.03278pt too wide) in paragraph at lines 756--756
+|[]\T2A/cmr/bx/n/14.4 ƒÓÍ‡ÊËÚÂ ÚÂÓÂÏÛ Ó ÙÓÏÛÎÂ “ÂÈÎÓ‡ Ò ÓÒÚ‡ÚÓ˜Ì˚Ï ˜ÎÂÌÓÏ ‚ ÙÓÏÂ
+ []
+
+
+Overfull \hbox (7.03278pt too wide) in paragraph at lines 760--760
+|[]\T2A/cmr/bx/n/14.4 ƒÓÍ‡ÊËÚÂ ÚÂÓÂÏÛ Ó ÙÓÏÛÎÂ “ÂÈÎÓ‡ Ò ÓÒÚ‡ÚÓ˜Ì˚Ï ˜ÎÂÌÓÏ ‚ ÙÓÏÂ
+ []
+
+[16] [17] (./matan2.aux)
+
+Package rerunfilecheck Warning: File `matan2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `matan2.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  6AF18881CDC3B3711AE15518CC4D1FC9;65806.
+ ) 
+Here is how much of TeX's memory you used:
+ 11783 strings out of 479721
+ 177616 string characters out of 5887697
+ 511144 words of memory out of 5000000
+ 29498 multiletter control sequences out of 15000+600000
+ 478578 words of font info for 48 fonts, out of 8000000 for 9000
+ 430 hyphenation exceptions out of 8191
+ 60i,20n,63p,599b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk> </home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx2074.600pk> </home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk> </home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on matan2.pdf (17 pages, 221349 bytes).
+PDF statistics:
+ 550 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 125 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

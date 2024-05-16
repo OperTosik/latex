@@ -1,0 +1,764 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage{etoolbox}
+\usepackage{amsmath}
+% \usepackage{physics} 
+
+\usepackage{geometry}
+\geometry{left = 10mm}
+\geometry{right = 10mm}
+\geometry{top = 10mm}
+\geometry{bottom = 15mm}
+
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\Rm}{\texorpdfstring{$R^m$}{Lg}}
+
+\usepackage[russian]{babel}
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Содержание}%
+}
+
+\usepackage{titlesec}
+\titleformat{\section}{\LARGE \bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\Large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{1em}{}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+% Цвета для гиперссылок
+\definecolor{linkcolor}{HTML}{225ae2} % цвет ссылок
+\definecolor{urlcolor}{HTML}{225ae2} % цвет гиперссылок
+\hypersetup{
+    pdfstartview=FitH, 
+    linkcolor=linkcolor,
+    urlcolor=urlcolor,
+    colorlinks=true
+}
+
+\pdfstringdefDisableCommands{%
+\def\newline{}%
+  \def\quad{}%
+}
+
+
+\title{ПРОПИСАННЫЕ БИЛЕТЫ ПО МАТАН-2}
+\author{Лактюхин Никита, 113 группа}
+
+\begin{document}
+\fontsize{14pt}{20pt}\selectfont
+\maketitle
+ЕСЛИ НАЙДЕТЕ ОШИБКИ, ТО ПИШИТЕ МНЕ, БУДУ ИСПРАВЛЯТЬ.
+\newpage
+\tableofcontents
+\fontsize{14pt}{20pt}\selectfont
+\newpage
+    \section{Тема 1. Множества точек пространств \Rm}
+        \subsection{Определения}
+            \subsubsection{Окрестность точки А пространства \Rm}
+
+            $\forall$ открытое связное множество, содержащее точку А.
+
+            \subsubsection{Шаровая окрестность точки пространства \Rm}
+
+            \subsubsection{Прямоугольная окрестность точки А пространства \Rm}
+
+            Пусть $A(a_1,\ldots, a_m) \in R^m$ и $d_1, \ldots , d_m$ - некоторые
+            положительные числа. Множество \{$M(x_1, \ldots, x_m):|x_1 -a_1|\leq d_1, \ldots, |x_m - a_m| \leq d_m$\}
+            --- прямоугольная окрестность точки А пространства $R^m$.
+
+            \subsubsection{Внутренняя точка множества D точек пространства \Rm}
+
+            Точка A называется внутренней точкой множества $\{D\}$,
+            если\newline $\exists$ $\epsilon$ - окрестность точки A, целиком
+            принадлежащая множеству $\{D\}$.
+
+            \subsubsection{Изолированная точка множества D точек пространства \Rm}
+
+            Точка A называется изолированной точкой множества $\{D\}$,
+            если она принадлежит $\{D\}$ и $\exists$  $\epsilon$-окрестность точки
+            A, в которой нет других точек из $\{D\}$, кроме A.
+
+            \subsubsection{Граничная точка множества D точек пространства \Rm}
+
+            Точка A называется граничной точкой множества $\{D\}$, если
+            в любой $\epsilon$ -окрестности точки A содержатся как
+            точки множества $\{D\}$, так и точки, которые этому
+            множеству не принадлежат.
+
+            \subsubsection{Граница множества D точек пространства \Rm}
+
+            Множество всех граничных точек называется границей множества $\{D\}$
+
+            \subsubsection{Открытое множество точек пространства \Rm}
+
+            Множество $\{D\}$ называется открытым, если все его точки — внутренние.
+
+            \subsubsection{Замкнутое множество точек пространства \Rm}
+
+            Множество $\{D\}$ называется замкнутым, если оно содержит
+            все свои граничные точки.
+
+            \subsubsection{Предельная точка множества D точек пространства \Rm}
+
+            Точка A называется предельной точкой множества $\{D\}$, если
+            в любой $\epsilon$ -окрестности точки A содержатся точки из множества
+            $\{D\}$, отличные от A (при этом предельная точка может как
+            принадлежать, так и не принадлежать множеству $\{D\}$).
+
+            \subsubsection{Непрерывая кривая в пространстве \Rm}
+
+            Множество точек L = \{$ M(x_1, \ldots ,x_m) : x_1 = \phi_1(t), \ldots, x_m = \phi_m(t),
+            \alpha \leq \beta $\}, где $\phi_1(t), \ldots, \phi_m(t)$ -- непрерывные
+            на сегменте $[\alpha,\beta]$ функции.
+
+            \subsubsection{Связное множество точек пространства \Rm}
+
+            Множество $\{D\}$ называется связным, если любые две его
+            точки можно соединить непрерывной кривой, все точки которой
+            принадлежат $\{D\}$.
+
+    \section{Тема 2. Последовательности точек пространства \Rm}
+        \subsection{Определения}
+            \subsubsection{Ограниченная последовательность точек пространства \Rm}
+
+            Последовательность $\{M_n\}$  называется ограниченной, если все ее члены лежат в \newline
+            некотором шаре. \newline
+            Эквивалентное определение: $\exists$ R>0 : $\forall$ n: $\rho(M_n, O)$ $\leq$ R.
+            Точка О - начало координат.  
+
+
+            \subsubsection{Неограниченная последовательность точек пространства \Rm}
+
+            $\forall$R>0 $\exists$n: $\rho(M_n, O)$ > R.
+
+            \subsubsection{Предел последовательности точек пространства \Rm}
+
+            Точка A $\in$ $R_m$ называется пределом последовательности $\{R_m\}$, если
+            $\displaystyle{\lim_{n \to +\infty}}$ $\rho(M_n, O)$ = 0.\newline
+            Обозначение: \[\displaystyle{\lim_{n \to +\infty}} M_n = A\]
+
+            \subsubsection{Сходящаяся последовательность точек пространства \Rm}
+
+            Последовательность точек, имеющая предел.
+
+            \subsubsection{Предельная точка последовательности точек пространства \Rm}
+
+            Точка А - предельная точка, если в $\forall$ $\epsilon$-окрестности точки А
+            содержится бесконечно много членов последовательности точек $M_n$.
+
+            \subsubsection{Фундаментальная последовательность точек пространства \Rm}
+
+            Последовательность точек $\{M_n\}$ называется фундаментальной, если\newline
+            $\forall \epsilon$>0 $\exists$ N, такое что, $\forall$ n>N и $\forall$ m>N:
+            $\rho(M_n, M_m) < \epsilon$.
+        \subsection{Теоремы(без доказательства)}
+            \subsubsection{Теорема о критерии Коши сходимости последовательности точек пространства \Rm}
+
+            Для того, чтобы последовательность $\{M_n\}$ сходилась,
+            необходимо и достаточно, чтобы она была фундаментальной.
+
+            \subsubsection{Теорема Больцано-Вейерштрасса для последовательности точек\newline пространства \Rm.}
+
+            Из всякой ограниченной последовательности $\{M_n\}$ можно выделить сходящуюся\newline
+            подпоследовательность.
+        \subsection{Теоремы(с доказательством)}
+            \subsubsection{Докажите, что любая ограниченная последовательность точек на плоскости
+            имеет по крайней мере одну предельную точку.}
+
+            Пусть $\{M_n(x_n, y_n)\}$ - ограничена. Отсюда следует, что числовые последовательности $\{x_n\}$ и 
+            $\{y_n\}$ также ограничены.
+
+            Тогда по теореме Больцано-Вейерштрасса для числовой последовательности из\newline $\{x_n\}$ можно выделить
+            подпоследовательность $\{x_{k_n}\}$, сходящуюся к некоторому числу $a_1$. Из подпоследовательности
+            $\{y_{k_n}\}$ также можно выделить сходящуюся\newline подпоследовательность: $\{y_{m_n}\} \rightarrow a_2$.
+            При этом $\{x_{m_n}\} \rightarrow a_1$.
+
+            Тогда подпоследовательность точек $\{M_{m_n}\}$ сходится к числу $A(a_1, a_2)$, что и\newline требовалось доказать.
+
+            \subsubsection{Докажите, что если последовательность точек \texorpdfstring{$\{M_n(x_n, y_n)\}$}{Lg}
+            на\newline плоскости является сходящейся, то числовые последовательности \texorpdfstring{$\{x_n\}$}{Lg}
+            и \texorpdfstring{$\{y_n\}$}{Lg} являются сходящимися.}
+
+            Т.к. последовательность точек $\{M_n(x_n, y_n)\}$ является сходящейся(пусть сходится к точке А($a_1, a_2$)), то \newline
+            $\displaystyle{\lim_{n \to +\infty}}$ $\rho(M_n$, А) = 0, т.е. $\exists$ R>0 : $\forall$ n:$\sqrt{(x_n - a_1)^2 + (y_n - a_2)^2}$ $\leq$ R.
+            
+            Отсюда следует, что  $\exists$ R>0 : $\forall$ n: $|(x_n - a_1)|$ $\leq$ R и $|(y_n - a_2)|$ $\leq$ R,
+            т.е $\{x_n\} \rightarrow a_1$ и $\{y_n\} \rightarrow a_2$, что и требовалось доказать.
+
+            \subsubsection{Докажите, что если числовые последовательности \texorpdfstring{$\{x_n\}$}{Lg}
+            и \texorpdfstring{$\{y_n\}$}{Lg}\newline являются сходящимися, то последовательность точек
+            \texorpdfstring{$\{M_n(x_n, y_n)\}$}{Lg}\newline на плоскости является сходящейся}
+
+            Пусть $\{x_n\} \rightarrow a_1$ и $\{y_n\} \rightarrow a_2$. Тогда последовательности
+            $\{x_n - a_1\}$ и $\{y_n - a_2\}$ -- бесконечно малые последовательности. Отсюда следует, что \newline$\rho(M_n, A)
+            = \sqrt{(x_n - a_1)^2 + (y_n - a_2)^2}$ -- тоже бесконечно малая последовательность.
+
+            А это по определению обозначает, что $\{M_n\} \rightarrow A$. Что и требовалось доказать.
+
+
+            \subsubsection{Сформулируйте и докажите теорему о критерии Коши сходимости
+            последовательности точек пространства \Rm}
+
+            Формулировка: Для того, чтобы последовательность $\{M_n\}$ сходилась,
+            необходимо и достаточно, чтобы она была фундаментальной.
+
+            Доказательство:
+
+            \textbf{1. Необходимость:}
+
+            Пусть $\{M_n(x_1^{(n)}, \ldots, x_m^{(n)})\}$ -- сходится.
+
+            1. Т.к. $\{M_n\}$ сходится, то $\{x_n^1\}, \ldots, \{x_n^m\}$ -- сходятся.
+
+            2. По критерию Коши в $R^m$ $\{x_n^1\}, \ldots, \{x_n^m\}$ -- фундаметальные последовательности.\newline
+            $\forall i \in [1,\ldots,m]$ $\forall \epsilon$>0 $\exists$N : $\forall$ k,l > N :
+            $|x_k^i - x_l^i| < \frac{\epsilon}{\sqrt{m}}$.
+
+            3. Пусть $M_k$ и $M_l$ -- точки последовательности $\{M_n\}$.\newline
+            $\forall \epsilon$>0 $\exists$ N : $\forall$ k,l > N :
+            $\rho(M_k, M_l) = \sqrt{(x_k^1 - x_l^1)^2 + \ldots + (x_l^m - x_l^m)^2} < \sqrt{\frac{{\epsilon}^2}{m}\cdot m} < \epsilon$.\newline
+            Следовательно, $\{M_n\}$ - фундаментальная.
+
+            \textbf{2. Достаточность:}
+
+            Пусть последовательность $\{M_n(x_1^{(n)}, \ldots, x_m^{(n)})\}$ -- фундаментальная.
+
+            1. $\forall \epsilon$>0 $\exists$N : $\forall$ k,l > N : $\rho(M_k, M_l) < \epsilon$.\newline
+            $\rho(M_k, M_l) = \sqrt{(x_k^1 - x_l^1)^2 + \ldots + (x_l^m - x_l^m)^2} < \epsilon$.
+
+            2. $\forall i \in [1,\ldots,m]$ \quad $|x_k^i - x_l^i| < \epsilon$. \newline
+            $\forall \epsilon$>0 $\exists$N : $\forall$ k,l > N : $|x_k^i - x_l^i| < \epsilon$,
+            т.е $\forall i \in [1,\ldots,m]$ \quad $x_n^i$ -- фундаментальная.
+
+            3. Т.к. $x_n^i$ - фундаментальная, то по критерию Коши в $R^1$ $x_n^i$ --\newline сходится($\forall i \in [1,\ldots,m]$)
+            $\Rightarrow$ $\{M_n\}$ - сходится.
+    \section{Тема 3. Функции, предел, непрерывность.}
+        \subsection{Определения}
+            \subsubsection{Ограниченная сверху (снизу) функция u(M), заданная на множестве D точек пространства \Rm}
+
+            $\exists$ R : $\forall M \in \{D\}$ : u(M) $\leq$ R\quad (u(M) $\geq$ R).
+
+            \subsubsection{Неограниченная сверху (снизу) функция u(M), заданная на\newline множестве D точек пространства \Rm}
+
+            $\forall$ R : $\exists M \in \{D\}$ : u(M) > R\quad (u(M) < R). 
+
+            \subsubsection{Точная верхняя (нижняя) грань функции u(M), заданной на\newline множестве D точек пространства \Rm}
+
+            A = $\underset{\{D\}}{sup}$ u(M), если:
+
+            1. $\forall D \in \{D\}$ : u(D) $\leq$ A\quad (u(D) $\geq$ A)
+            
+            2. $\forall \widetilde{A}$ < A \quad ($\forall \widetilde{A}$ > A) $\exists$ $\widetilde{D}\in\{D\}$ : u($\widetilde{D}$) > $\widetilde{A}$.\quad
+            (u($\widetilde{D}$) < $\widetilde{A}$)
+
+            \subsubsection{Предел функции u(M) в точке \texorpdfstring{$M_0 \in R^m$}{Lg}\quad “по Коши”}
+
+            Число b называется пределом функции u = f(M) в точке A (при M$\rightarrow$А), если
+            $\forall \epsilon > 0$ $\exists \delta > 0$ : $\forall M \in \{M\}$, $0 < \rho(M, A) < \delta$ :
+            $|f(M) - b| < \epsilon$.
+
+            \subsubsection{Предел функции u(M) в точке \texorpdfstring{$M_0 \in R^m$}{Lg}\quad “по Гейне”}
+
+            Число b называется пределом функции u = f(M) в точке A (при M$\rightarrow$A)\newline если $\forall \{M_n\}$
+            $\rightarrow$ A($M_n \in \{M\}$, $M_n \neq A$) соответствующая последовательность\newline $\{f(M_n)\} \rightarrow b$.
+
+            \subsubsection{Предел функции u(M) в бесконечно удаленной точке пространства \Rm \quad “по Гейне”}
+
+            Число b называется пределом функции u = f(M) в точке A (при M$\rightarrow \infty$)\newline если $\forall \{M_n\}$
+            $\rightarrow$ $\infty$ ($M_n \in \{M\}$) соответствующая последовательность $\{f(M_n)\} \rightarrow b$.
+
+            \subsubsection{Предел функции u(M) в бесконечно удаленной точке пространства \Rm \quad “по Коши”}
+
+            Число b называется пределом функции u = f(M) в точке A (при M$\rightarrow$А), если
+            $\forall \epsilon > 0$ $\exists R > 0$ : $\forall M \in \{M\}$, $\rho(M, O) > R$ :
+            $|f(M) - b| < \epsilon$.
+
+            \subsubsection{Функция u(x,y), непрерывная по переменной x в точке \texorpdfstring{$M_0(x_0, y_0)$}{Lg}}
+
+            $\displaystyle{\lim_{\triangle x \rightarrow 0}}$ ${\triangle}_x u$ = 0, где 
+            ${\triangle}_x u = f(x_0 + \triangle x, y_0) - f(x_0, y_0)$.
+
+            \subsubsection{Функция u(x,y), непрерывная по совокупности переменных в точке \texorpdfstring{$M_0(x_0, y_0)$}{Lg}}
+
+            $\displaystyle{\lim_{M \rightarrow M_0}}$ f(M) = f($M_0$). $\displaystyle{\lim_{M \rightarrow M_0}}$
+            $\triangle u$ = $\displaystyle{\lim_{M \rightarrow M_0}} $(f(M) - f($M_0$)) = 0.
+
+            \subsubsection{Повторный предел функции u(x, y)  в точке \texorpdfstring{$M_0(x_0, y_0)$}{Lg}}
+
+        \subsection{Теоремы(без доказательства)}
+            \subsubsection{Теорема о критерии Коши существования предела функции в точке \texorpdfstring{$M_0 \in$}{Lg} \Rm}
+
+            Для того, чтобы функция f(M) имела предел в точке A, необходимо и достаточно, чтобы она удовлетворяла
+            в этой точке условию Коши.
+
+            $\displaystyle{\lim_{M \rightarrow A}}$ f(M) = b $\Leftrightarrow$ $\forall \epsilon$ > 0
+            $\exists \delta$ > 0 : $\forall M_1$ и $M_2 \in \{M\}$ $0 < \rho(M_1, A) < \delta$ и \newline
+            $0 < \rho(M_2, A) < \delta$ : $|f(M_2) - f(M_1)| < \epsilon$
+
+            \subsubsection{Теорема о непрерывности суммы двух функций нескольких\newline переменных}
+
+            Если функции f(M) и g(M) определены на множестве $\{M\}$ и непрерывны в точке A, то
+            функция f(M)+g(M) непрерывна в точке А.
+
+            \subsubsection{Теорема о непрерывности произведения двух функций нескольких переменных}
+
+            Если функции f(M) и g(M) определены на множестве $\{M\}$ и непрерывны в точке A, то
+            функция f(M)$\cdot$g(M) непрерывна в точке А.
+
+            \subsubsection{Теорема о непрерывности частного от деления двух функций\newline нескольких переменных}
+
+            Если функции f(M) и g(M) определены на множестве $\{M\}$ и непрерывны в точке A, то
+            функция $\frac{f(M)}{g(M)}$ (при условии g(A) $\neq$ 0) непрерывна в точке А.
+
+            \subsubsection{Теорема об устойчивости знака непрерывной функции нескольких переменных}
+
+            Если функция u = f(M) непрерывна в точке A и f(A) > 0 (< 0), то $\exists$ $\delta$-окрестность
+            точки A, в которой f(M) > 0 (< 0).
+
+            \subsubsection{Теорема о прохождении непрерывной функции нескольких\newline переменных через любое промежуточное значение}
+
+            Пусть функция u = f(M) = f($x_1, \ldots, x_m$) непрерывна на связном множестве $\{M\}$, пусть
+            $M_1$ и $M_2$ — две любые точки из $\{M\}$, f($M_1$) = $u_1$, f($M_2$) = $u_2$,
+            и пусть $u_0$ — любое число из сегмента [$u_1$, $u_2$].
+            Тогда на любой непрерывной кривой L, соединяющей точки
+            $M_1$ и $M_2$ и целиком принадлежащей множеству $\{M\}$, найдется
+            такая точка $M_0$, такая, что f($M_0$) = $u_0$.
+
+            \subsubsection{Первая теорема Вейерштрасса для функции нескольких\newline переменных}
+
+            Если функция u = f(M) непрерывна на замкнутом ограниченном множестве $\{M\}$, то она ограничена на этом множестве.
+
+            \subsubsection{Вторая теорема Вейерштрасса для функции нескольких переменных}
+
+            Непрерывная на замкнутом ограниченном множестве функция достигает на
+            этом\newline множестве своих точных нижней и верхней граней.
+
+            \subsubsection{Теорема о непрерывности сложной функции нескольких\newline переменных}
+
+            Пусть функции $x_1 = {\phi}_1(t_1,\ldots,t_k),\ldots, x_m = {\phi}_m(t_1,\ldots ,t_k)$ непрерывны в точке\newline A($a_1,\ldots, a_k$), а функция
+            u = f($x_1, \ldots, x_m$) непрерывна в точке B($b_1, \ldots, b_m$),\newline где $b_1$ = ${\phi}_1(a_1, \ldots, a_k$),$\ldots$, $b_m$ = ${\phi}_m$($a_1, \ldots, a_k$).\newline
+            Тогда сложная функцция u = f (${\phi}_1$($t_1, \ldots,t_k$), $\ldots$, ${\phi}_m(t_1, \ldots, t_k$)) непрерывна\newline в точке A.
+            \subsubsection{Теорема Кантора для функции нескольких переменных}
+
+            Непрерывная на замкнутом ограниченном множестве функция равномерно\newline непрерывна на этом множестве.
+            
+        \subsection{Теоремы(с доказательством)}
+            \subsubsection{Докажите теорему о пределе суммы двух функций нескольких\newline переменных в данной точке.}
+
+            Формулировка:
+
+
+
+            \subsubsection{Докажите теорему о пределе произведения двух функций\newline нескольких переменных в данной точке.}
+
+            fgfdg
+
+            \subsubsection{Докажите теорему о непрерывности суммы двух функций\newline нескольких переменных.}
+
+            Формулировка:
+            Если функции f(M) и g(M) определены на множестве $\{M\}$ и\newline непрерывны
+            в точке A, то функция f(M)+g(M) непрерывна в точке А.
+
+            Доказательство:
+
+            1. $\displaystyle{\lim_{M \rightarrow A}}$ f(M)+g(M) =
+            $\displaystyle{\lim_{M \rightarrow A}}$f(M) + $\displaystyle{\lim_{M \rightarrow A}}$
+            g(M) = f(A) + g(A).
+
+            \subsubsection{Докажите теорему о непрерывности произведения двух функций нескольких переменных.}
+
+            Формулировка:
+            Если функции f(M) и g(M) определены на множестве $\{M\}$ и\newline непрерывны
+            в точке A, то функция f(M)$\cdot$g(M) непрерывна в точке А.
+
+            Доказательство:
+
+            1. $\displaystyle{\lim_{M \rightarrow A}}$ f(M)$\cdot$g(M) =
+            $\displaystyle{\lim_{M \rightarrow A}}$f(M) $\cdot$ $\displaystyle{\lim_{M \rightarrow A}}$
+            g(M) = f(A) $\cdot$ g(A).
+
+            \subsubsection{Докажите теорему о непрерывности частного от деления двух\newline функций нескольких переменных. }
+
+            Формулировка:
+            Если функции f(M) и g(M) определены на множестве $\{M\}$ и\newline
+            непрерывны в точке A, то функция $\frac{f(M)}{g(M)}$
+            (при условии g(A) $\neq$ 0) непрерывна в точке А.
+
+            Доказательство:
+
+            1. $\frac{\displaystyle{\lim_{M \rightarrow A}}f(M)}{\displaystyle{\lim_{M\rightarrow A}}g(M)}$ = $\frac{f(A)}{g(A)}$
+
+
+            \subsubsection{Докажите теорему о непрерывности сложной функции нескольких переменных.}
+
+
+
+            \subsubsection{Докажите теорему об устойчивости знака непрерывной функции двух переменных.}
+
+            Формулировка:
+            Если функция u = f(M) непрерывна в точке A и f(A) > 0 (< 0), то
+            $\exists$ $\delta$-окрестность точки A, в которой f(M) > 0 (< 0).\newline
+            Доказательство:\newline
+            Докажем для f(A) > 0 (Для f(A) < 0 аналогично):\newline
+            По определению непрерывности функции в т. А: 
+            $\forall \epsilon > 0$ $\exists \delta > 0$ : $\forall M \in \{M\}$,
+            $0 < \rho(M, A) < \delta$ : $|f(M) - f(A)| < \epsilon$.\newline
+            Возьмем $\epsilon$ = f(A). Тогда $\exists \delta > 0$ : 
+            $\forall M \in \{M\}$, $0 < \rho(M, A) < \delta$ : 0 < f(M) < 2f(A),
+            то есть $\exists \delta$-окрестность т.А, в которой f(M) > 0,
+            что и требовалось доказать.
+
+            \subsubsection{Докажите теорему о прохождении непрерывной функции двух\newline переменных через любое промежуточное значение. }
+
+            Формулировка:
+            Пусть функция u = f(M) = f($x_1, \ldots, x_m$) непрерывна на связном\newline
+            множестве $\{M\}$, пусть $M_1$ и $M_2$ — две любые точки из $\{M\}$,
+            f($M_1$) = $u_1$, f($M_2$) = $u_2$, и пусть $u_0$ — любое число из
+            сегмента [$u_1$, $u_2$].
+            Тогда на любой непрерывной кривой L, соединяющей точки
+            $M_1$ и $M_2$ и целиком принадлежащей множеству $\{M\}$, найдется
+            такая точка $M_0$, такая, что f($M_0$) = $u_0$.
+
+            Доказательство:
+
+            Пусть L = \{$M(x_1, \ldots, x_m)$: $x_1 = {\phi}_1(t), \ldots, x_m = {\phi}_m(t),
+            \alpha \leq t \leq \beta$\} -- непрерывная кривая, соединяющая
+            точки $M_1$ и $M_2$ и целиком принадлежащая множеству \{M\}.
+
+            Точки $M_1$ и $M_2$ имеют координаты: $M_1({\phi}_1(\alpha), 
+            \ldots, {\phi}_m(\alpha))$, $M_2({\phi}_1(\beta), \ldots,
+            {\phi}_m(\beta))$.
+
+            На кривой L заданная функция является сложной функцией переменной t:\newline
+            u = f(${\phi}_1(t), \ldots, {\phi}_m(t)$) =: F(t) (По теореме о непрерывности
+            сложной функции F(t) непрерывна на сегменте [$\alpha, \beta$]).
+
+            F($\alpha$) = f(${\phi}_1(\alpha), \ldots, {\phi}_m(\alpha)$) = f($M_1$)
+            = $u_1$ и F($\beta$) = f($M_2$) = $u_2$.
+
+            В силу известной теоремы для функции одной переменной $\forall u_0 \in [u_1, u_2]$\newline
+            $\exists$ $t_0$ $\in$ [$\alpha, \beta$], такое, что F($t_0$) = $u_0$.
+            Но F($t_0$) = f(${\phi}_1(t_0), \ldots, {\phi}_m(t_0)$) = f($M_0$),
+            причем точка $M_0$(${\phi}_1(t_0), \ldots, {\phi}_m(t_0)$) $\in$ L.
+
+            Итак, $\exists$ точка $M_0$ $\in$ L: f($M_0$) = $u_0$, что и требовалось
+            доказать.
+
+            \subsubsection{Докажите первую теорему Вейерштрасса для функции двух\newline переменных.}
+
+            Формулировка: Если функция u = f(M) непрерывна на замкнутом ограниченном
+            множестве $\{M\}$, то она ограничена на этом множестве.\newline
+            Доказательство:
+
+            1. Допустим, u = f(M) не ограничена на заданном множестве $\{M\}$.
+
+            2. Тогда $\forall$ n$\in$N $\exists$ $M_n$ $\in$ $\{M\}$: $|f(M_n)|$ > n.
+            Тем самым последовательность $\{M_n\}$ -- бесконечно большая.
+
+            3. $\{M_n\}$ -- ограниченная последовательность $\Rightarrow$ из нее можно
+            выделить сходящуюся подпоследовательность $M_{k_n}$ $\rightarrow$ A.
+
+            4. Покажем, что A $\in$ $\{M\}$. $M_{k_n}$ $\rightarrow$ A, т.е. в любой
+            $\epsilon$-окрестности т. А содержатся члены подпоследовательности $M_{k_n}$.
+            Поэтому т. А - либо внутренняя, либо граничная.\newline
+            Если А - внутренняя, то A $\in$ $\{M\}$.\newline
+            Если А - граничная, то А тоже $\in$ $\{M\}$, т.к. $\{M\}$ - замкнутое
+            множество.
+
+            5. Т.к. т. А $\in$ $\{M\}$, то f(M) непрерывна в т. А $\Rightarrow$
+            $\displaystyle{\lim_{M \rightarrow A}}$ f(M) = f(A), т.е.\newline
+            $\{f(M_{k_n})\}$ $\rightarrow$ f(A), что противоречит тому, что
+            $\{f(M_{k_n})\}$ неограничена в т. А $\Rightarrow$\newline u = f(M)
+            ограничена на заданном множестве $\{M\}$, что и требовалось доказать.
+
+            
+
+            \subsubsection{Докажите вторую теорему Вейерштрасса для функции двух\newline переменных.}
+
+            Формулировка: Непрерывная на замкнутом ограниченном множестве функция\newline
+            достигает на этом множестве своих точных нижней и верхней граней.\newline
+            Доказательство:
+
+            Докажем методом от противного. Пусть $\forall$ M $\in$ $\{M\}$
+            f(M) < U, где U -- точная верхняя грань.
+
+            Введем функцию F(M) = $\frac{1}{U - f(M)}$ > 0, непрерыва на $\{M\}$
+            $\Rightarrow$ ограничена на $\{M\}$ (по 1 теореме Вейерштрасса),
+            т.е. $\exists$A: $\forall$ M $\in$ $\{M\}$ 0 < F(M) < A $\Rightarrow$
+            f(M) $\leq$ U - $\frac{1}{A}$ < U, т.е. f(M) имеет верхнюю грань,
+            меньшую U $\Rightarrow$ противоречие. Значит, f(M) $\leq$ U, что и
+            требовалось доказать.
+
+    \section{Тема 4. Дифференцируемые функции.}
+        \subsection{Определения}
+            \subsubsection{Функция f(\texorpdfstring{$x_1, \ldots, x_m$}{Lg}), дифференцируемой в точке M(\texorpdfstring{$x_1, x_2, \ldots, x_m$}{Lg})}
+
+            Функция f($x_1, \ldots, x_m$) называется дифференцируемой в точке
+            M($x_1, x_2, \ldots, x_m$), если ее полное приращение в этой точке
+            можно представить в виде\newline
+            $\triangle$u = $A_1x_1 + \ldots + A_mx_m + {\alpha}_1\triangle x_1 + 
+            \ldots + {\alpha}_m\triangle x_m$, где $A_1, \ldots, A_m$ -- некоторые
+            числа(не зависят от $\triangle x_1, \ldots, \triangle x_m$), ${\alpha}_i 
+            = {\alpha}_i(\triangle x_1, \ldots, \triangle x_m)$, i = 1, 2, $\ldots$,
+            m -- бесконечно малые функции при \{$\triangle x_1 \rightarrow 0,
+            \ldots, \triangle x_m \rightarrow 0$\}, равные нулю при $\triangle x_1 = \ldots
+            = x_m = 0$.
+
+
+            \subsubsection{Частная производная функции f(\texorpdfstring{$x_1, \ldots, x_m$}{Lg}) по переменной
+            \texorpdfstring{$x_k$}{Lg} в точке M(\texorpdfstring{$x_1, x_2, \ldots, x_m$}{Lg})}
+
+            Пусть M($x_1, \ldots, x_m$) -- внутренняя точка области определения функции
+            u = f(M) = f($x_1, \ldots, x_m$). Рассмотрим ${\triangle}_{x_k}$u
+            = f($x_1, \ldots, x_{k-1}, x_k + \triangle x_k, x_{k+1}, \ldots, x_m$) -\newline
+            f($x_1, \ldots, x_k, \ldots, x_m$).\newline
+            Если $\exists$ $\displaystyle{\lim_{\triangle x_k \rightarrow 0}}$ 
+            $\frac{{\triangle}_{x_k}u}{x_k}$, то он называется частной производной
+            функции u = f($x_1, \ldots, x_m$) в точке М по переменной $x_k$
+
+            \subsubsection{Первый дифференциал функции нескольких переменных}
+
+            Первым дифференциалом функции u = f(M) называется линейная относительно\newline
+            $\triangle x_1, \ldots, \triangle x_m$ часть приращения функции в точке М:\newline
+            $\dd$u = $\pdv{u}{x_1}$(M)$\triangle x_1$ + $\ldots$ + $\pdv{u}{x_m}$(M)$\triangle x_m$\newline
+            Если $x_i$(i = 1, $\ldots, m$) -- независимые переменные, то $\dd x_i$ =
+            $\triangle x_i$. Тогда:\newline
+            $\dd u$ = $\pdv{u}{x_1}$(M)$\dd x_1$ + $\ldots$ + $\pdv{u}{x_m}$(M)$\dd x_m$ = 
+            $\sum\limits_{j = 1}^{m} \pdv{u}{x_j} \dd x_j$.
+
+            \subsubsection{Касательная плоскость к графику функции z = f(x, y) в точке\newline \texorpdfstring{$M_0(x_0, y_0, f(x_0, y_0))$}{Lg}}
+
+            Плоскость P, проходящая через точку $N_0$ поверхности S, называется
+            касательной плоскостью к поверхности S в этой точке, если при N
+            $\rightarrow$ $N_0$ (N $\in S$) расстояние $\rho$(N, $N_1$) является
+            бесконечно малой величиной более высокого порядка, чем $\rho$(N, $N_0$),
+            т.е. $\displaystyle{\lim_{\substack{N \Rightarrow N_0\\N\in S}}}$ 
+            $\frac{\rho(N, N_1)}{\rho(N, N_0)}$ = 0.\newline
+            S = \{N(x, y, f(x, y)), (x, y) $\in$ D\}\newline
+            $N_0$ $\in$ S\newline
+            N -- произвольная точка на S\newline
+            N$N_1$ $\perp$ P, $N_1 \in$ P.
+
+            \subsubsection{Функция нескольких переменных, n раз дифференцируемая\newline в данной точке}
+
+            Функция u = f($x_1, \ldots, x_m$) n раз дифференцируема в точке $M_0$,
+            если она (n - 1) раз дифференцируема в некоторой окрестности точки $M_0$
+            и все ее частные производные (n - 1) - го порядка дифференцируемы в самой
+            точке $M_0$.
+
+            \subsubsection{Второй дифференциал функции f(\texorpdfstring{$x_1, \ldots, x_m$}{Lg}) в данной точке}
+
+            Дифференциалом второго порядка (или вторым дифференциалом) функции
+            u = f(x, y) в точке $M_0$ называется дифференциал от первого дифференциала
+            $\dd$u при следующих условиях:\newline
+            1. $\dd$u рассматривается как функция только $x_1, \ldots, x_m$\newline
+            2. При вычислении дифференциалов от $\pdv{u}{x_1}$($x_1, \ldots, x_m$),
+            $\ldots$, $\pdv{u}{x_m}$($x_1, \ldots, x_m$)\newline приращения
+            $\triangle x_1, \ldots, \triangle x_m$ независимых переменных
+            $x_1, \ldots, x_m$ берутся равными\newline $\dd x_1, \ldots, \dd x_m$.
+
+            ${\dd}^2 u = \dd(\dd u)$
+
+            \subsubsection{n – ый дифференциал функции f(\texorpdfstring{$x_1, \ldots, x_m$}{Lg}) в данной точке}
+
+            Дифференциалом n-го порядка функции
+            u = f(x, y) в точке $M_0$ называется\newline дифференциал от (n - 1) дифференциала
+            $\dd$u при следующих условиях:\newline
+            1. $\dd$u рассматривается как функция только $x_1, \ldots, x_m$\newline
+            2. При вычислении дифференциалов от частных производных 
+            (n - 1) порядка\newline приращения
+            $\triangle x_1, \ldots, \triangle x_m$ независимых переменных
+            $x_1, \ldots, x_m$ берутся равными\newline $\dd x_1, \ldots, \dd x_m$.
+
+            ${\dd}^n u = \dd({\dd}^(n-1) u)$
+
+            \subsubsection{Градиент функции f(\texorpdfstring{$x, y, z$}{Lg}) в точке \texorpdfstring{$M_0(x_0, y_0, z_0)$}{Lg}}
+
+            Вектор grad $\vec{u}(M)$ = $\pdv{u}{x}(M_0) \vec{i}$ + $\pdv{u}{y}(M_0) \vec{j}$
+            + $\pdv{u}{z}(M_0) \vec{k}$
+
+            \subsubsection{производная по направлению \texorpdfstring{$\vec{l} = (\cos\alpha, \cos \beta, \cos \gamma)$}{Lg} функции\newline f(x, y, z) в точке \texorpdfstring{$M_0(x_0, y_0, z_0)$}{Lg}}
+
+            Если существует $\displaystyle{\lim_{\substack{M \Rightarrow M_0\\M\in L}}}$
+            $\frac{f(M) - f(M_0)}{M_0M}$, то он называется производной функции\newline
+            u = f(M) в точке $M_0$ по направлению $\vec{l}$ и обозначается 
+            $\pdv{u}{l}$($M_0$).\newline
+            $M_0M =
+            \begin{cases}
+                |\overrightarrow{M_0M}|, & \overrightarrow{M_0 M} \uparrow\uparrow \vec{l}\\
+                -|\overrightarrow{M_0M}| & \overrightarrow{M_0 M} \uparrow\downarrow \vec{l}\\
+            \end{cases}$\newline
+            $\vec{l}$ -- направляющий вектор L.
+
+        \subsection{Теоремы(без доказательства)}
+            \subsubsection{Сформулируйте теорему о необходимых условиях дифферен-\newline цируемости функции \texorpdfstring{$f(x_1, \ldots, x_m)$}{Lg} в точке \texorpdfstring{$M_0$}{Lg} пространства \Rm}
+
+            Если функция u = f$(x_1, \ldots, x_m$) дифференцируема в точке M($x_1, \ldots, x_m$),
+            то она имеет в точке M частные производные по всем переменным.
+
+            \subsubsection{Сформулируйте теорему о достаточных условиях дифференци-\newline руемости функции \texorpdfstring{$f(x_1, \ldots, x_m)$}{Lg} в точке \texorpdfstring{$M_0$}{Lg} пространства \Rm}
+
+            Если функция u = f($x_1, \ldots, x_m$) имеет частные производные по всем
+            переменным в некоторой $\epsilon$-окрестности точки M($x_1, \ldots, x_m$),
+            причем в самой точке M эти частные производные непрерывны, то функция
+            дифференцируема в точке M.
+
+            \subsubsection{Сформулируйте теорему о достаточных условиях равенства\newline \texorpdfstring{$f_{xy} = f_{yx}$}{Lg} в точке \texorpdfstring{$M_0(x_0, y_0)$}{Lg}}
+
+            Если в некоторой окрестности точки $M_0(x_0, y_0)$ функция u = f(x, y) 
+            имеет смешанные частные производные $f_{xy}$ и $f_{yx}$, и если эти
+            смешанные производные непрерывны в точке $M_0$, то они равны в этой точке:
+            $f_{xy}$ = $f_{yx}$.
+
+            \subsubsection{Сформулируйте теорему о касательной плоскости к графику\newline функции двух переменных}
+
+            Если функция z = f(x, y) дифференцируема в точке $M_0(x_0, y_0)$, то в
+            точке\newline $N_0(x_0, y_0, f(x_0, y_0))$, существует касательная плоскость
+            к графику этой функции.
+
+            \subsubsection{Сформулируйте теорему о дифференцируемости сложной функции нескольких переменных}
+
+            Пусть:\newline
+            1. функции x = $\phi(u, v), y = \psi(u, v)$ дифференцируемы в точке
+            $(u_0, v_0)$\newline
+            2. функция z = f(x, y) дифференцируема в точке ($x_0, y_0$), где
+            $x_0 = \phi(u_0, v_0)$,\newline $y_0 = \psi(u_0, v_0)$\newline
+            Тогда сложная функция z = f($\phi(u, v), \psi(u, v))$ дифференцируема
+            в точке ($u_0, v_0$).
+
+            \subsubsection{Запишите формулу для частных производных сложной функции}
+
+            u =f($x_1, \ldots, x_m$), где $x_1 = {\phi}_1(t_1, \ldots, t_k)$,
+            $\ldots$ , $x_m = {\phi}_m(t_1, \ldots, t_k)$. Тогда:\newline
+            $\pdv{u}{t_i}$ = $\pdv{u}{x_1}\cdot \pdv{x_1}{t_i}$ + $\ldots$ +
+            $\pdv{u}{x_m}\cdot \pdv{x_m}{t_i}$ = $\sum\limits_{j = 1}^{m}$
+            $\pdv{u}{x_j}\cdot \pdv{x_j}{t_i}$ (i = 1, $\ldots$ , k).
+
+            \subsubsection{Запишите выражение производной функции f(x, y, z) по заданному направлению в данной точке через частные производные функции в этой точке}
+
+            u = f(x, y, z) = f($x_0 + t\cos \alpha$, $y_0 + t\cos \beta$, $z_0 + t\cos \gamma$)
+            = $\phi$(t).\newline
+            $\pdv{u}{l} (M_0)$ = $\displaystyle{\lim_{\substack{M \rightarrow M_0}}}$
+            $\frac{f(M) - f(M_0)}{M_0M}$ = $\displaystyle{\lim_{t \rightarrow 0}}$
+            $\frac{\phi(t) - \phi(0)}{t}$ = $\dv{\phi}{t}$ (0).\newline
+            $\dv{\phi}{t}$(0) = $\pdv{u}{x}$($M_0$) $\dv{x}{t}$(0) + 
+            $\pdv{u}{y}$($M_0$) $\dv{y}{t}$(0) + $\pdv{u}{z}$($M_0$) $\dv{z}{t}$(0)\newline
+            $\pdv{u}{l} (M_0)$ = $\pdv{u}{x}$($M_0$)$\cos \alpha$ + 
+            $\pdv{u}{y}$($M_0$)$\cos \beta$ + $\pdv{u}{z}$($M_0$)$\cos \gamma$
+
+            \subsubsection{Запишите выражение производной функции f(x, y, z) по заданному направлению в данной точке через градиент функции в этой точке}
+
+            $\pdv{u}{l} (M_0)$ = (grad u($M_0$)$\cdot$ $\vec{l}$) = 
+            |grad u|$\cdot$|$\vec{l}$|$\cdot \cos \phi$ = |grad u|$\cdot$
+            $\cos \phi$ = $Pr_{\vec{l}}$ grad u($M_0$)
+
+            \subsubsection{Запишите формулу Лагранжа конечных приращений для функции нескольких переменных. При каких условиях эта формула верна?}
+
+            u = f($x_1, \ldots, x_m$) дифференцируема в $\epsilon$-окрестности
+            точки\newline $M_0(x_1^0, \ldots, x_m^0)$.
+            Тогда $\forall$ точки $M_0(x_1^0 + \triangle x_1, \ldots,
+            x_m^0 + \triangle x_m)$ из этой $\epsilon$-окрестности:\newline
+            $\triangle u$ = f($x_1^0 + \triangle x_1, \ldots, x_m^0 + \triangle x_m$)
+            - f($x_1^0, \ldots, x_m^0$) = $\dd u|_{N}$ = 
+            $\pdv{u}{x_1}(N) \triangle x_1$ + $\ldots$ + $\pdv{u}{x_m}(N) \triangle x_m$\newline
+            (N $\in$ $MM_0$)
+
+            \subsubsection{Запишите выражение для второго дифференциала функции\newline нескольких независимых переменных}
+
+            $\dd[2] u$ = $\dd (\dd u)$ = $\dd (\pdv{u}{x} \dd x + \pdv{u}{y} \dd y)$ =
+            $\Bigl(\pderivative{x}(\pdv{u}{x}) \dd x + \pderivative{y}(\pdv{u}{x})\dd y\Bigr) \dd x$ +\newline 
+            + $\Bigl(\pderivative{x}(\pdv{u}{y})\dd x + \pderivative{y}(\pdv{u}{y})\dd y\Bigr) \dd y$ =
+            $\pdv[2]{u}{x}$ ${(\dd x)}^2$ + 2$\pdv{u}{x}{y} \dd x \dd y$ + $\pdv[2]{u}{y}$ ${(\dd y)}^2$\newline
+            $\dd[2] u$ = ${(\pderivative{x} \dd x + \pderivative{y} \dd y)}^2$u
+
+            \subsubsection{Запишите выражение для дифференциала n –го порядка функции двух независимых переменных}
+
+            $\dd[n]$ = $\dd (\dd[n-1] u)$ = ${(\pderivative{x} \dd x + \pderivative{x} \dd y)}^n$u
+
+
+            \subsubsection{Запишите выражение для второго дифференциала функции\newline f(u, v), если u = u(x, y), v = v(x, y), причем (x, y) – независимые переменные}
+
+            $\dd[2] u$ = $\dd ( \pdv{f}{u} \dd u + \pdv{f}{v} \dd v)$ = $\bigr[\dd (\pdv{f}{u})\bigl]\dd x$ +
+            $\pdv{f}{u} \dd[2] x$ + $\bigr[\dd (\pdv{f}{v}) \bigl]\dd v$ + $\pdv{f}{v} \dd[2] y$ =\newline
+            = $\Bigr[ {(\pderivative{u} \dd u + \pderivative{v} \dd v)}^2f\Bigl]$ +
+            $\Bigr\{ \pdv{f}{u}\dd[2] u + \pdv{f}{v}\dd[2] v \Bigl\}$.
+
+            \subsubsection{Запишите выражение для второго дифференциала функции\newline f(u, v), если u = u(t), v = v(t), причем t – независимая переменная}
+
+
+
+            \subsubsection{Запишите выражение для второго дифференциала функции\newline f(u, v, w), если u = u(x, y), v = v(x, y), w = w(x, y)\newline причем (x, y) – независимые переменные}
+
+
+
+            \subsubsection{Запишите выражение для второго дифференциала функции\newline f(u, v, w), если u = u(x, y, z), v = v(x, y, z), w = w(x, y, z),\newline причем (x, y, z) – независимые переменные}
+
+
+
+            \subsubsection{Сформулируйте теорему о формуле Тейлора с остаточным членом в форме Лагранжа для функции f(x, y)}
+
+
+
+            \subsubsection{Сформулируйте теорему о формуле Тейлора с остаточным членом в форме Пеано для функции f(x, y)}
+
+
+
+            \subsubsection{Сформулируйте теорему о формуле Тейлора с остаточным членом в форме Лагранжа для функции \texorpdfstring{$f(x_1, \ldots, x_m)$}{Lg}}
+
+
+
+            \subsubsection{Сформулируйте теорему о формуле Тейлора с остаточным членом в форме Пеано для функции \texorpdfstring{$f(x_1, \ldots, x_m)$}{Lg}}
+            
+
+            sdfgsdfg
+        \subsection{Теоремы(с доказательством)}
+            \subsubsection{Докажите теорему о непрерывности дифференцируемой функции нескольких переменных в точке}
+
+
+
+            \subsubsection{Докажите теорему о дифференциале суммы двух дифференци-\newline руемых функций нескольких переменных в данной точке}
+
+
+
+            \subsubsection{Докажите теорему о дифференциале произведения двух\newline дифференцируемых функций нескольких переменных в дан-\newlineной точке}
+
+
+
+            \subsubsection{Докажите теорему о необходимых условиях дифференцируемости функции \texorpdfstring{$f(x_1, \ldots, x_m)$}{Lg} в точке \texorpdfstring{$f(x_1, \ldots, x_m)$}{Lg} пространства \Rm}
+
+
+
+            \subsubsection{Докажите теорему о достаточных условиях дифференцируемости функции \texorpdfstring{$f(x_1, \ldots, x_m)$}{Lg} в точке \texorpdfstring{$f(x_1, \ldots, x_m)$}{Lg} пространства \Rm}
+
+
+
+            \subsubsection{Докажите теорему о достаточных условиях равенства \texorpdfstring{$f_{xy} = f_{yx}$}{Lg} в точке \texorpdfstring{$M_0(x_0, y_0)$}{Lg}}
+
+
+
+            \subsubsection{Докажите теорему о касательной плоскости к графику функции двух переменных.}
+
+
+
+            \subsubsection{Докажите теорему о дифференцируемости сложной функции\newline f(u, v), , если u = u(x, y), , v = v(x, y), , причем (x, y) -- независимые переменные}
+
+
+
+            \subsubsection{Докажите, что производная дифференцируемой в точке\newline \texorpdfstring{$M(x_0, y_0, z_0)$}{Lg} функции f(x, y, z) по направлению \texorpdfstring{$\vec{l} = (\cos\alpha, \cos \beta, \cos \gamma)$}{Lg}
+            равна скалярному произведению вектора \texorpdfstring{$\vec{l}$}{Lg} и градиента функции f в точке M}
+
+
+
+            \subsubsection{Докажите теорему о формуле Тейлора с остаточным членом в форме Лагранжа для функции \texorpdfstring{$f(x_1, \ldots, x_m)$}{Lg}}
+
+
+
+            \subsubsection{Докажите теорему о формуле Тейлора с остаточным членом в форме Пеано для функции f(x, y)}
+
+
+            asfsdgr
+\end{document}

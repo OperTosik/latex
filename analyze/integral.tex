@@ -1,0 +1,85 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
+% \usepackage{mathtext}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\usepackage{amsthm}
+% \usepackage{nicematrix}
+% \usepackage{graphicx}
+% \usepackage{tikz}
+% \usepackage{parskip}
+% \graphicspath{/Images/}
+
+%Реализация aug, overbrace и underbrace без nice matrix
+\newcommand\aug{\fboxsep=-\fboxrule\!\!\!\fbox{\strut}\!\!\!}
+\newcommand\undermat[2]{\makebox[0pt][l]{$\smash{\underbrace
+{\phantom{\begin{matrix}#2\end{matrix}}}_{\text{$#1$}}}$}#2}
+\newcommand\overmat[2]{\makebox[0pt][l]{$\smash{\overbrace
+{\phantom{\begin{matrix}#2\end{matrix}}}^{\text{$#1$}}}$}#2}
+\newcommand\tab[1][.5cm]{\hspace*{#1}}
+\newcommand\Underset[2]{\underset{\textstyle #1}{#2}}
+\newcommand\Overset[2]{\overset{\textstyle #1}{#2}}
+
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Определение}
+\newtheorem*{theorem}{Теорема}
+\newtheorem*{consequense}{Следствие}
+\newtheorem*{lemma}{Лемма}
+\newtheorem*{subtheorem}{Утверждение}
+\newtheorem*{remark}{Замечание}
+
+
+\begin{document}
+    \fontsize{14pt}{20pt}\selectfont
+    \begin{center}
+        \begin{Large}            
+            \textbf{Таблица интегралов}
+        \end{Large}
+        \begin{tabular}{l l}\\
+            $\int x^adx = \frac{x^{a+1}}{a + 1} + C\ (a \neq -1)$ &
+            $\int \frac{dx}{a^2 + x^2} = \frac{1}{a}arctg \frac{x}{a} + C\ (a>0)$\\\\
+            $\int \frac{dx}{x} = \ln |x| + 1,\ x \neq 0$ &
+            $\int \frac{dx}{a^2 - x^2} = \frac{1}{2a}\ln \frac{|a + 1|}{|a - x|} + C\ (a > 0)$\\\\
+            $\int a^xdx = \frac{a^x}{\ln a} + C\ (a > 0, a \neq 1)$ &
+            $\int \frac{dx}{\sqrt{a^2 - x^2}} = \arcsin \frac{x}{a} + C\ (a > 0)$\\\\
+            $\int e^xdx = e^x + C$ &
+            $\int \frac{dx}{\sqrt{x^2 + k}} = \ln|x + \sqrt{x^2 + k}| + C\ (k \neq 0)$\\\\
+            $\int \sin xdx = -\cos x + C$ & $\int\sh xdx = \ch x + C$\\\\
+            $\int \cos xdx = \sin x + C$ & $\int \ch xdx = \sh x + C$\\\\
+            $\int \frac{dx}{\cos^2 x} = \tg x + C$ &
+            $\int \frac{dx}{sh^2 x} = -\cth x + C$\\\\
+            $\int \frac{dx}{\sin^2 x} = -\ctg x + C$ &
+            $\int \frac{dx}{ch^2 x} = \th x + C$
+        \end{tabular}     
+    \end{center}
+    \begin{center}
+        \textbf{Методы решения}
+    \end{center}
+    \underline{По частям}:$\int udv = uv - \int vdu$\\
+    $\\$\underline{Метод Остроградского}: $\int \frac{P_n(x)}{Q_m(x)}dx =
+    \frac{P_{m-k-1}}{Q_{m-k}} + \int \frac{R_{k-1}(x)}{Q_k(x)}dx$\\
+    $\\$\underline{Иррациональные функции}: $\int \frac{P_n(x)}{y}dx =
+    Q_{n-1}(x)y + \lambda\int \frac{dx}{y},\ y = \sqrt{ax^2 + by + c}$\\
+    $\\$\underline{Освновная тригонометрическая замена:}
+    $t = \tg \frac{x}{2},\ \sin x = \frac{2\tg \frac{x}{2}}
+    {1 + \tg^2\frac{x}{2} },\ \cos x = \frac{1 - \tg^2 \frac{x}{2}}
+    {1 + \tg^2 \frac{x}{2}}$\\$\\$
+    \underline{Другие способы:} $\int \frac{a_1\sin x + 
+    b_1\cos x + c_1}{a\sin x + b\cos y + c}dx = Ax + B\ln|
+    a\sin x + b\cos y + c| +$
+    \begin{flushright}
+        $+ C\int \frac{dx}{a\sin x + b\cos y + c} $     
+    \end{flushright}
+    $\int\sin^nxdx = -\frac{1}{n}\cos x\sin^{n-1} x + 
+    \frac{n-1}{n}\int\sin^{n-2}xdx$\\
+    $\int\cos^nxdx = \frac{1}{n}\sin x\cos^{n-1} x + 
+    \frac{n-1}{n}\int\cos^{n-2}xdx$ 
+
+\end{document}
