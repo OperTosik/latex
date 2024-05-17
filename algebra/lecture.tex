@@ -5299,7 +5299,7 @@
     \begin{definition}
         Произведение тензоров: пусть $f_1 \in T_p^q,\ f_2 \in T_r^s$, тогда $f_1 \otimes f_2:\ \underbrace{V\times...\times V}_{p+r}\times \underbrace{V^*\times...\times V^*}_{q + s} \longmapsto F$, т.е. $f_1 \otimes f_2 \in T_{p+r}^{q+s}$
     \end{definition}
-    $$(f_1 \otimes f_2)(v_1,...,v_p,v_{p+1},...,v_{p+r};u_1,...,u_q+s) = $$
+    $$(f_1 \otimes f_2)(\underbrace{v_1,...,v_p,v_{p+1},...,v_{p+r}}_{\text{векторы } \in V};\underbrace{u_1,...,u_{q+s}}_{\text{ковекторы } \in V^*}) = $$
     $$= f_1(v_1,...,v_p;u_1,...,u_q)f_2(v_{p+1},...,v_{p+r};u_{q+1},...,u_{q + s})$$
     \underline{Свойства операции операции $\otimes$:}
     \begin{subtheorem}
@@ -5308,31 +5308,99 @@
             \item $(f_1 \otimes f_2) \otimes f_3 = f_1 \otimes (f_2 \otimes f_3)$ -- ассоциативность.
             \item $(\alpha f_1 + \beta f_2) \otimes f_3 = \alpha(f_1 \otimes f_3) + \beta(f_2\otimes f_3)$ -- дистрибутивность.
         \end{enumerate}
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-    
     \end{subtheorem}    
+    \begin{center}
+        \textbf{Правило суммирования Эйнштейна.} 
+    \end{center}
+    Договоренность, что координаты вектора пишутся с верхними индексами, тогда разложение вектора по базису:
+    $$x = \sum\limits_{i} x^i e_i \equiv x^i e_i$$
+    В последнем предполагается суммирование по $i$, ради сокращения записи.\\
+    Коэффициенты линейной формы -- с нижними индексами:
+    $$u(x,y) = \sum\limits_{i} a_i x^i$$
+    Матрица линейного оператора обозначается $A = (a_j^i)$, где $i$ -- индекс строки, а $j$ --индекс столбца.
+    $$\varphi(x) = AX = \sum\limits_{i} a_j^i x^j$$
+    \begin{center}
+        \textbf{Отождествление тензоров малых валентностей (рангов) с геометрическими объектами.}     
+    \end{center}
+    Под тензором понимаем векторы, линейные формы, билинейные формы, операторы.
 
+    1. $T_1^0(V) = V^*$
 
+    2. $T_0^1(V) = V^{**} = V$
+    
+    3. $T_2^0(V)$ -- билинейная форма.
 
+    4. $T_1^1(V) \cong L(V)$\\
+    Пусть $f(v,u)$ -- тензор типа $(1,1)$. Изоморфизм между $V^{**}$ и $V$ задается правилом:
+    $$\forall v \in V,\ v \longmapsto \varepsilon_v \in V^{**},\ \forall u \in V^* \text{ выполнено } \varepsilon_v(u) = u(v)$$
+    (И наоборот, для $l \in V^{**}$ обозначим $v = y_v \in V$ -- обратное отображение.)\\
+    При фиксированном $v,\ f(v,u)$ -- линейная функция на $V^{**} \Longrightarrow$ $$f(v,u) = \varepsilon_v(u) = u(v) = u(y_v)\tab[1cm](*)$$
+    Соответствие $\overbrace{v \longmapsto y_v}^{V \overset{\varphi}{\longmapsto} V}$ из условия $(*)$ является линейным оператором. Для $f$ существует единственый. $\varphi$\\
+    Наоборот, $\forall \varphi: V \longmapsto V$, функция $f(v,u) := u(\varphi(v))$, где $f: V \times V^* \longmapsto  F.$ 
 
+    \begin{center}
+        \textbf{Построение базиса в пространстве $T_p^q(V)$.}
+    \end{center}
+    Пусть $e = \{e_1,...,e_n\}$ -- базис в $V$, а $e^* = \{e^1,...,e^n\}$ -- дуальный базис в $V^*$.
+    \begin{theorem}
+        Тензоры 
+        $$e^{i_1} \otimes ... \otimes e^{i_p} \otimes e_{j_1} \otimes ... \otimes e_{j_q}\ (i_1,...,i_p,j_1,...,j_q = \overline{1,n})$$ образуют базис в пространстве $T_p^q \Longrightarrow \text{dim}T_p^q = n^{p+q}$ 
+    \end{theorem} 
+    \begin{proof}
+        Любой тензор $f$ разлагается по тензорам $(**)$.\\
+        Пусть $v_1 = x_1^{i_1}e_{i1},..., v_p = x_p^{i_p}e_{ip}$
 
-
+        $\tab[0.9cm]u_1 = y_{j_1^1}e^{j_1},..., u_q = y_{j_q^q}e^{j_q}$ 
+        $$f(v_1,...,v_p;u_1,...,u_q) = f(x_1^{i_1}e_{i_1},...;y_{j_1}^1e^{j_1},...)= $$
+        Используя линейность по каждому аргументу получаем:
+        $$= x_1^{i_1}\cdot ... \cdot x_p^{i_p}\cdot y_{j_1}^1 \cdot ... \cdot y_{j_q}^q \cdot f(e_{i_1},...,e_{i_p};e^{j_1},...,e^{j_q})$$
+        Заметим, что 
+        $f(e_{i_1},...,e_{i_p};e^{j_1},...,e^{j_q}) = T_{i_1,...,i_p}^{j_1,...,j_q}$ -- координаты тензора $f(\vec v; \vec u)$.
+        Индексы должны быть "и сверху и снизу".
+        $$(e^{i_1} \otimes ... \otimes e^{i_p} \otimes e_{j_1} \otimes ... \otimes e_{j_q})(e_{i'_1},...,e_{i'_p};e^{j'_1},..., e^{j'_q}) =$$ 
+        $$= e^{i_1}(e_{i'_1})\cdot ... \cdot e^{i_p}(e_{i'_p})\cdot e_{j_1}(e^{j'_1})\cdot ... \cdot e_{j_q}(e^{j'_q})= $$
+        $$= \delta_{i'_1}^{i_1}\cdot ... \cdot \delta_{i'_p}^{i_p}\cdot \delta_{j_1}^{j'_1}\cdot ... \delta_{j_q}^{j'_q} = \begin{cases}
+            1, (i_1,...,i_p) = (i'_1,...,i'_p) \text{ и } (j_1,...,j_p) = (j'_1,...,j'_p)\\
+            0, \text{ иначе}
+        \end{cases}$$
+        $$(e^{i'_1} \otimes e^{i'_p} \otimes e_{j'_1} \otimes ... \otimes e_{j'_q})(v_1,...,v_p; u_1,...,u_q) = $$
+        $$x_1^{i_1} \cdot ... \cdot x_p^{i_p}\cdot y_{j_1}^1 \cdot ... \cdot y_{j_q}^q(e^{i'_i}\otimes e_{j'_q})(e_{i_1},...,e^{j_q})$$
+        Причем $(e^{i'_i}\otimes e_{j'_q})(e_{i_1},...,e^{j_q})$ раняется 1, только когда $(i_1,...,i_p) = (i'_1,...,i'_p)$ и $(j_1,...,j_p) = (j'_1,...,j'_p)$.
+        Тогда 
+        $$f(v_1,...,v_p;u_1,...,u_q) = T_{i_1,...,i_p}^{j_1,...,j_q}(e^{i_1}\otimes ... \otimes e^{i_p} \otimes e_{j_1} \otimes ... \otimes e_{j_q})(v_1,...,v_p;u_1,...,u_q)$$
+        $T_{i_1,...,i_p}^{j_1,...,j_q}$ фактически являются координатами тензора $f$ в сисетеме тензоров (**).\\
+        Тензоры (**) ЛНЗ: допустим, что коэффициенты $\Lambda_{i_1,...,i_p}^{j_1,...,j_q}$, такие что
+        $$\widetilde{f} = \Lambda_{i_1,...,i_p}^{j_1,...,j_q}(e^{i_1}\otimes ... \otimes e^{i_p} \otimes e_{j_1} \otimes ... \otimes e_{j_q}) = 0$$
+        Рассмотрим тензор $\widetilde{f} \equiv 0$, точнее 
+        $$\widetilde{f}(e_{i_1},...,e_{i_p};e^{j_1},...,e^{j_q}) = \Lambda_{i_1,...,i_p}^{j_1,...,j_q} = 0$$ 
+        Для $\forall i_k,j_l$ 
+    \end{proof}
+    \begin{center}
+        \textbf{Иземенение координат тензора при замене базиса.} 
+    \end{center}
+    Если $e = (e_1,...,e_n)$ -- старый базис; $e' = (e'_1,...,e'_n)$ -- новый базис в $V$, $e^* = (e^1,...,e^n)$ старый базис в $V^*$, $e'^* = (e'^1,...,e'^n)$ -- новый базис в $V^*$.
+    $$x = x^ie_i = x'^{i'}e'_{i'},\tab[0.5cm]x^i = c_{i'}^i x'^{i'},\tab[0.5cm](c_{i'}^i) = C_{e \to e'}$$
+    $$u = y_je^j = y'_{j'}e'^{j'},\tab[0.5cm]y'_{j'} = y_jc_{j'}^i - \text{ ковариантный закон}$$
+    (В общем у Гайфуллина расписано лучше, пишите в тг, если что)\\ %comment
+    Равносильно: $X' = C^{-1}X$, обозначим $D = C^{-1} \Longrightarrow x'^{i'} = d_i^{i'}x^i$ -- контравариантный закон.\\ В старом базисе:
+    $$f = T_{i_1,...,i_p}^{j_1,...,j_q}(e^{i_1}\otimes ... \otimes e^{i_p} \otimes e_{j_1} \otimes ... \otimes e_{j_q})$$
+    $$T_{i_1,...,i_p}^{j_1,...,j_q} = f(e_{i_1},...,e_{i_p};e^{j_1},...,e^{j_q})$$
+    В новом базисе:
+    $$T_{i'_1,...,i'_p}^{'j'_1,...,j'_q} = f(e'_{i'_1},...,e'_{i'_p};e'^{j'_1},...,e'^{j'_q})$$
+    В координатах:
+    $$f(e_{i_1},...,e_{i_p};e^{j_1},...,e^{j_q}) = T_{i_1,...,i_p}^{j_1,...,j_q}x_1^{i_1}...x_p^{i_p}\cdot y_{j_1}^1 ... y_{j_q}^q = $$
+    $$= T_{i_1,...,i_p}^{j_1,...,j_q}c_{i'_1}^{i_1} x_1^{'i'_1}...x_p^{'i'_p}\cdot d_{j_1}^{j'_1}y_1^{'j_1}...d_{j_q}^{j'_q}y_q^{'j_q}=$$
+    $$= T_{i'_1,...,i'_p}^{'j'_1,...,j'_q} x_1^{'i'_1} ... x_p^{'i'_p}\cdot y_{j'_1}^{'1} ... y_{j'_q}^{'q} \Longrightarrow $$
+    $$T_{i'_1,...,i'_p}^{'j'_1,...,j'_q} = T_{i_1,...,i_p}^{j_1,...,j_q} c_{i'_1}^{i_1}\cdot ... \cdot c_{i'_p}^{i_p}\cdot d_{j_1}^{j'_1}\cdot...\cdot d_{j_q}^{j'_q}\tab[1cm](*)$$
+    $(*)$ означает, что этот тензор (или эта матрица) $p$ раз ковариантный и $q$ раз контравариантный.   
+    \begin{center}
+        \begin{Large}
+            \textbf{\S2. Свертка, симметризация и альтернирование.}
+        \end{Large}
+    \end{center}
+    След матрицы линейного оператора 
+    $$\text{tr}A = \sum a_i^i = a_i^a \in T_0^0 - \text{ инвариант}$$
+    $$T_p^q \to Y_{p-1}^{q-1},\ p,q \geq 1$$
 
 
 
