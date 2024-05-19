@@ -3431,7 +3431,7 @@
     \end{proof}
     \begin{consequense}
         (Теорема Фредгольца)\\
-        СЛУ $AX = b\ (*)$ совметсна $\Longleftrightarrow \forall
+        СЛУ $AX = b\ (*)$ совместна $\Longleftrightarrow \forall
         Y$ -- решения сопряженной однородной системы $A^TY = 0$
         выполняется условие: $Y^Tb = 0$, (т.е $Y \perp b$ )  
     \end{consequense}
@@ -3439,7 +3439,7 @@
     Система (*) совместна означает, что $b \in \text{Im}
     \varphi$, если $A$ -- матрица оператора $\varphi$\\
     По 2, $b \in \text{Im}\varphi \Longleftrightarrow 
-    b \in (\text{Ker}\varphi)^\perp,$ т.е. $\forall Y:
+    b \in (\text{Ker}\varphi^*)^\perp,$ т.е. $\forall Y:
     A^TY = 0,\ (b,Y) = 0$ 
 
     \begin{center}
@@ -5368,7 +5368,7 @@
         Причем $(e^{i'_i}\otimes e_{j'_q})(e_{i_1},...,e^{j_q})$ раняется 1, только когда $(i_1,...,i_p) = (i'_1,...,i'_p)$ и $(j_1,...,j_p) = (j'_1,...,j'_p)$.
         Тогда 
         $$f(v_1,...,v_p;u_1,...,u_q) = T_{i_1,...,i_p}^{j_1,...,j_q}(e^{i_1}\otimes ... \otimes e^{i_p} \otimes e_{j_1} \otimes ... \otimes e_{j_q})(v_1,...,v_p;u_1,...,u_q)$$
-        $T_{i_1,...,i_p}^{j_1,...,j_q}$ фактически являются координатами тензора $f$ в сисетеме тензоров (**).\\
+        $T_{i_1,...,i_p}^{j_1,...,j_q}$ фактически являются координатами тензора $f$ в системе тензоров (**).\\
         Тензоры (**) ЛНЗ: допустим, что коэффициенты $\Lambda_{i_1,...,i_p}^{j_1,...,j_q}$, такие что
         $$\widetilde{f} = \Lambda_{i_1,...,i_p}^{j_1,...,j_q}(e^{i_1}\otimes ... \otimes e^{i_p} \otimes e_{j_1} \otimes ... \otimes e_{j_q}) = 0$$
         Рассмотрим тензор $\widetilde{f} \equiv 0$, точнее 
@@ -5381,7 +5381,7 @@
     Если $e = (e_1,...,e_n)$ -- старый базис; $e' = (e'_1,...,e'_n)$ -- новый базис в $V$, $e^* = (e^1,...,e^n)$ старый базис в $V^*$, $e'^* = (e'^1,...,e'^n)$ -- новый базис в $V^*$.
     $$x = x^ie_i = x'^{i'}e'_{i'},\tab[0.5cm]x^i = c_{i'}^i x'^{i'},\tab[0.5cm](c_{i'}^i) = C_{e \to e'}$$
     $$u = y_je^j = y'_{j'}e'^{j'},\tab[0.5cm]y'_{j'} = y_jc_{j'}^i - \text{ ковариантный закон}$$
-    (В общем у Гайфуллина расписано лучше, пишите в тг, если что)\\ %comment
+    (В общем у Гайфуллина расписано лучше)\\ %comment
     Равносильно: $X' = C^{-1}X$, обозначим $D = C^{-1} \Longrightarrow x'^{i'} = d_i^{i'}x^i$ -- контравариантный закон.\\ В старом базисе:
     $$f = T_{i_1,...,i_p}^{j_1,...,j_q}(e^{i_1}\otimes ... \otimes e^{i_p} \otimes e_{j_1} \otimes ... \otimes e_{j_q})$$
     $$T_{i_1,...,i_p}^{j_1,...,j_q} = f(e_{i_1},...,e_{i_p};e^{j_1},...,e^{j_q})$$
@@ -5393,6 +5393,19 @@
     $$= T_{i'_1,...,i'_p}^{'j'_1,...,j'_q} x_1^{'i'_1} ... x_p^{'i'_p}\cdot y_{j'_1}^{'1} ... y_{j'_q}^{'q} \Longrightarrow $$
     $$T_{i'_1,...,i'_p}^{'j'_1,...,j'_q} = T_{i_1,...,i_p}^{j_1,...,j_q} c_{i'_1}^{i_1}\cdot ... \cdot c_{i'_p}^{i_p}\cdot d_{j_1}^{j'_1}\cdot...\cdot d_{j_q}^{j'_q}\tab[1cm](*)$$
     $(*)$ означает, что этот тензор (или эта матрица) $p$ раз ковариантный и $q$ раз контравариантный.   
+    \begin{center}
+        \textbf{А теперь докажем то же самое, но методом Гайфуллина.}
+    \end{center}
+    Формально, он проделывает же те шаги, но с более удобными обозначениями.
+    $$C_{e \to \overline{e}}:\ (\overline{e_1},...,\overline{e_n}) = (e_1,...,e_n)C \Longrightarrow$$ $$\overline{c}_j = \sum\limits_{i=1}^{n} e_ic_{ij} = \begin{vmatrix}
+        (c_{ij}) := (c^i_j)
+    \end{vmatrix} = \sum\limits_{i=1}^{n} e_ic_j^i = e_ic^j_i$$
+    Из-за хейта знак суммирования опущен.\\ %comment
+    Пусть $D := C^{-1}$. Тогда
+    $$e_j = \overline{e}_i\cdot d_j^i,\tab[1cm] e^j = c_i^j\cdot \overline{e}^i$$ 
+    $$f = T_{i_1,...,i_p}^{j_1,...,j_q}e^{i_1}\otimes ... \otimes e^{i_p} \otimes e_{j_1} \otimes ... \otimes e_{j_q} = \overline{T}_{a_1,...,a_p}^{b_1,...,b_q} \cdot\overline{e}^{a_1}\otimes ... \otimes \overline{e}^{a_p}\otimes \overline{e}_{b_1}\otimes ... \otimes \overline{e}_{b_q}$$
+    $$f = T_{i_1,...,i_p}^{j_1,...,j_q}\cdot c_{a_1}^{i_1}\cdot \overline{e}^{a_1} \otimes ... \otimes c_{a_p}^{i_p}\cdot \overline{e}^{a_p} \otimes d_{j_1}^{b_1}\cdot \overline{e}_{b_1} \otimes ... \otimes d_{j_q}^{b_q}\cdot \overline{e}_{b_q}$$
+    $$\boxed{\overline{T}_{a_1,...,a_p}^{b_1,...,b_q} = T_{i_1,...,i_p}^{j_1,...,j_q}\cdot c_{a_1}^{i_1}\cdot ... \cdot c_{a_p}^{i_p} \cdot d_{j_1}^{b_1}\cdot ... \cdot d_{j_q}^{b_q}}$$
     \begin{center}
         \begin{Large}
             \textbf{\S2. Свертка, симметризация и альтернирование.}
