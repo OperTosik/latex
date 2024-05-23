@@ -723,8 +723,7 @@
         \Longrightarrow f(\lambda v_1 + \mu v_2) =
         \lambda f(v_1) + \mu f(v_2)  = 0$$
     \end{proof}
-    \underline{Обозначим:} $V^* = \{f: V \mapsto F\}$ --
-    линейная функция.
+    \underline{Обозначим:} $V^* = \{f: V \mapsto F\}$, где $f$  -- линейная функция.
     
     Определим на $V^*$ операции сложения: $\forall f_1, f_2 \in V^*$
     выполнено $(f_1 + f_2)(v) := f_1(v) + f_2(v)$. Умножение на
@@ -822,7 +821,7 @@
         \in F\\ \varphi_{\lambda v}(v) = f(\lambda v) =
         \lambda f(v) = \lambda \varphi_v(f)$\\
         $\varphi$ -- инъективное отображение $\Longleftrightarrow
-        Ker\varphi = 0,\\ Ker\varphi = \{v \in V|\ f(v) = 0,\
+        Ker\varphi = 0:\\ Ker\varphi = \{v \in V|\ f(v) = 0,\
         \forall f \in V^*\} = \{0\}$. Таким образом, $\varphi:\ 
         V \longmapsto W$ --\\ инъективное линейное отображение. Но
         $dimV = dim(V^*)^* \Longrightarrow \varphi$ --
@@ -5414,6 +5413,107 @@
     След матрицы линейного оператора 
     $$\text{tr}A = \sum a_i^i = a_i^a \in T_0^0 - \text{ инвариант}$$
     $$T_p^q \to T_{p-1}^{q-1},\ p,q \geq 1$$
+    Пусть $f \in T_p^q,\ p,q \geq 1$ и $f = f(v_1,...,v_p;u^1,...,u^q)$\\
+    Выбирается $x \in [1,p],\ s \in [1,q]$, можно рассмотреть $$\overline{f}(v_1,...,\widehat{v}_r,..., v_p;u^1,...,\widehat{u}^s,...,u^q)$$
+    Сначала для $v_r = e_k,\ u_s = e^k$
+    $$\overline{f}(e_1,...,\widehat{e}_r,..., e_p;e^1,...,\widehat{e}^s,...,e^q) = \sum\limits_{k=1}^{n} e^k(e_k)\cdot f(e_1,...,e_k,...,e^1,...,e^k,...,e^q)$$ 
+    В матричном виде пусть $T_{i_1,...,i_p}^{j_1,...,j_q}$ -- матрица координат тензора $f$, а $\overline{T}$ -- тензора $\overline{f}$. Тогда 
+    $$\overline{T}_{i_1,...,\widehat{i}_r,...,i_p}^{j_1,...,\widehat{j}_s,...,j_q} = T_{i_1,...,k,...,i_p}^{j_1,...,k,...,j_q} \text{ (по $k$ подразумевается суммирование)}$$  
+    $$\text{tr}A = \sum a_i^i  = a_i^i\tab[1cm] \overline{f} := \text{tr}_r^s (f)$$
+
+    \begin{subtheorem}
+        $text{tr}_r^s:\ T_p^q(V) \longmapsto T_{p-1}^{q-1}(V)$ (если $p,q \geq 1$) -- линейное отображение.
+    \end{subtheorem}
+    Можно свертывать по всем наборам верхних и нижних индексов $m$ раз, где $m := min(p,q)$. Если $p=q=m$, то получится тензор типа $(0,0)$, т.е. скаляр, который является инвариантным. Если же $p \neq q$, то получится не смешанный, а чистый тензор.\\
+    \textbf{Пример:} 1. $A = a_j^i,\ x = x^k \Longrightarrow A \otimes x = a_j^i\cdot \overbrace{x^k}^{b_j^{ik}} \in T_1^2$. Если свернуть этот тензор по нижнему индексу $j$ и верхнему $k$: $\overline{b}^i = a_j^ix^j$ -- образ $x$ при действии линейного оператора с матрицей $A$.  
+
+    2. $A = a_j^i,\ B = b_l^k,\ A,B \in T_1^1$, $A \otimes B = a_j^ib_l^k$ ($i,j,k,l$ независимы) $\in T_2^2$. Свертка этого тензора по индексу $j$ и индексу $k$: $a_j^i b_l^j = (a\cdot B)_l^i$
+    \begin{center}
+        \textbf{Симметричность.} 
+    \end{center}
+    Для чистого тензора $T_p^0(V)$
+    $$f = f(v_1,...,v_p)$$
+    Определим действие подстановки $\pi \in S_p$ по правилу:
+    $$\pi \circ f \equiv f_\pi(v_1,...,v_p) = f(v_{\pi(1)},...,v_{\pi(p)})$$     
+    \begin{definition}
+        Тензор $f$ симметрический, если $\forall \pi \in S_p$ выполнено $f_p = f$.\\ Операция симметризации: 
+        $$\text{Sym}(f)(v_1,...,v_p) = \frac{1}{p!} \sum\limits_{\pi \in S_p} f_\pi(v_1,...,v_p)$$
+    \end{definition}
+    Аналогично можно определить симметричность и симметризацию на $T_0^q(V)$ 
+    \begin{subtheorem}\tab[1cm]
+
+        1. Если тензор $f$ симметрический, то $\text{Sym}(f) = f$.
+
+        2. $\text{Sym}^2 = \text{Sym}$
+
+        Обозначим $T_p^+$ (соотвественно $T_+^q$) -- пространство симметрических тензоров.
+
+        3. $\text{ImSym} = T_p^+$ (соотвественно $T_+^q$)
+        
+        Таким образом $\text{Sym}$ -- проектор из $T_p^0$ на $T_p^+$ (соотвественно $T_0^q$ на $T_+^q$ )   
+    \end{subtheorem}
+    \begin{proof}
+        Очевидно.
+    \end{proof}
+    \begin{center}
+        \textbf{Альтернирование (или антисимметричность).} 
+    \end{center}
+    \begin{definition}
+        Тензор $f(v_1,...,v_p)$ -- кососимметрический, если $\forall \pi \in S_p$ выполнено $f_\pi(v_1,...,v_p) = f(v_{\pi(1)},...,v_{\pi(p)}) = \text{sgn}(\pi)f(v_1,...,v_p)$.\\ Считаем, что $\text{char}F = 0$. Очевидно, что кососимметричность достаточно требовать для любой транспозиции.
+    \end{definition}
+    Обозначение: $\Lambda^p(V)$ -- пространство кососимметрических тензоров из $T_p^0$.\\
+    Для кососимметрических тензоров типа $(0,q)$ используется обозначение $\Lambda^q(V^*)$.\\
+    \textbf{Операция альтернирования:}
+    \begin{definition}
+        $\text{Alt}(f)(v_1,...,v_p) := \frac{1}{p!}\sum\limits_{\pi \in S_p} \text{sgn}(\pi)f(v_{\pi(1)},..., v_{\pi(p)})$ 
+    \end{definition}
+    \begin{subtheorem}\tab[1cm]
+
+        1. Alt: $T_p^0 \to T_p^0$ -- линейный отображение. Если $f \in \Lambda^p \Longrightarrow \text{Alt}(f) = f$
+        
+        2. $\text{Alt}^2 = \text{Alt}$
+        
+        3. ImAlt = $\Lambda^p$
+        
+        4. AltSym = Sym $\circ$ Alt $= 0$  
+    \end{subtheorem} \tab[1cm]\\
+    $T_2^0(V) = \overbrace{T_2^+(V)}^{\text{симм. тенз.}} \oplus \overbrace{\Lambda^2(V)}^{\text{кососимм. тенз.}}$\\
+    Но при $p \geq 3$ выполнено $T_p^+(V) \oplus \Lambda^p(V) \neq T_p^0(v)$  
+    \begin{center}
+        \textbf{Тензорная алгебра пространства $V$}. 
+    \end{center}
+    Внешняя прямая сумма пространств: $V_1 \oplus ... \oplus V_k = \{v_1,...,v_k\ |\ v_i \in V_i\}$ с покомпонентными линейными операциями.
+    $$\overset{\infty}{\underset{i=1}{\oplus}} V_i = \{(v_1,v_2,...)\ |\ v_i \in V_i,\ i = 1,2,...\}$$
+    Конечное число $v_i \neq 0$ -- финитные последовательности.\\
+    Рассмотрим в $W$ подпространства $\widetilde{V}_i = \{0,...,v_i,0,...|\ v_i \in V_i\}$. Тогда $\forall w \in W:\ w = \sum\limits_{i} \widetilde{v}_i$, можно отождествить $v_i \equiv \widetilde{v_i}, V_i \equiv \widetilde{V}_i$.\\
+    Обозначим $T^*(V) = \overset{\infty}{\underset{i=1}{\oplus}}T_p^0(V)$ (внешняя прямая сумма, отождествленная с внутренней). 
+    $$f \in T_p^0,\ g \in T_r^0 \Longrightarrow f \otimes g \in T_{p+r}^0$$
+    На пространстве $T^*(V)$ определены операции $+,\lambda\cdot,\otimes$, т.е. $T^*(V)$ -- алгебра, ассоциативная с $1 \in F$, но не коммутативная. $T_0^0(V) \equiv F$.\\
+    В пространстве $T^+(V)$ можно ввести операцию симметрического произведения: ($T^+$ -- множество всех симметрических тензоров).\\
+    Если $f \in T_p^+,\ g \in T_r^+ \Longrightarrow f \otimes g \in T_{p+r}$ 
+    $$f \vee g = \text{Sym}(f\otimes g) = \frac{1}{(p+r)!}\sum\limits_{\sigma \in S_{p+r}} f(v_{\sigma(1)},...,v_{\sigma(p)})$$
+    Тогда базис в пространстве $T_p^+$ будут образовывать тензоры $\{e^{i_1}\vee...\vee e^{i_p}\}$\\
+    $\text{dim}T_p^+ = C_n^p$ по всем различным элементам $i_1 \leq ... \leq i_p$.\\
+    Обозначим $\Lambda(V^*)$ -- кососимметрические тензоры в $T_0^q$
+    $$\Lambda(V^*) = \overset{\infty}{\underset{q=0}{\oplus}}\Lambda^q(V^*)$$
+    Внешнее (косое) произведение:
+    $$f \wedge g := \text{Alt}(f \otimes g) \text{ по группе $S_{q+s}$}$$
+    Базис в пространстве $\Lambda^q$ образуют тензоры $\{e_{i_1} \wedge ... \wedge e_{i_q}\}$ по всем индексам: $1 \leq i_1 < ... < i_q \leq n$.
+    $$\text{dim}\Lambda^q(V^*) = C_n^q \text{ при $q \leq n$, иначе 0}$$ 
+    $$\Lambda(V^*) = \overset{\infty}{\underset{q=0}{\oplus}} \Lambda(V^*) \Longrightarrow \text{dim}\Lambda(V^*) = 2^n$$
+    $\Lambda(V^*)$ -- внешняя алгебра или алгебра Грассмана. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1716129924 "/home/tosik/latex/algebra/lecture.tex" "lecture.pdf" "lecture" 1716129926
+["pdflatex"] 1716405899 "/home/tosik/latex/algebra/lecture.tex" "lecture.pdf" "lecture" 1716405901
   "/etc/texmf/web2c/texmf.cnf" 1708452357 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk" 1708883736 16944 7a262499333b1ded4f29707c9c714c3f ""
   "/home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk" 1708889715 36828 3c5d42b07817af82ef9004c00ab676e5 ""
@@ -27,7 +27,7 @@
   "/home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/lati0700.tfm" 1709967296 3528 15a6f610d0057e691178d31f3f277358 ""
   "/home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/lati1000.tfm" 1709967294 3528 defd551e32c4af414f9b54b8101bfa9b ""
   "/home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/lati1440.tfm" 1709039306 3528 460e6901416a816cf4afa844b5d54101 ""
-  "/home/tosik/latex/algebra/lecture.tex" 1716129924 280902 d252391c850cf044a10a617b1173b73f ""
+  "/home/tosik/latex/algebra/lecture.tex" 1716405899 288979 c0ce1d1063a41fa6226ca9eb158f0b29 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1136768653 1536 3290a75021d32d016616fe527bc9884c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -113,8 +113,8 @@
   "images/picture1.JPG" 1712429090 98455 6dd36b08d2e5d48cfe39d0d030282fb3 ""
   "images/table1.JPG" 1712238296 139673 a5384eb0de301c32eaae6160455d2f36 ""
   "images/table2.JPG" 1712238322 114618 a26309c6a777f1efcaa56833a7274401 ""
-  "lecture.aux" 1716129925 133 dbbb7323724b0b42173ede6f63ccab65 "pdflatex"
-  "lecture.tex" 1716129924 280902 d252391c850cf044a10a617b1173b73f ""
+  "lecture.aux" 1716405901 133 fa3e40c3f7c2f3d81aa2334c630ddfb4 "pdflatex"
+  "lecture.tex" 1716405899 288979 c0ce1d1063a41fa6226ca9eb158f0b29 ""
   (generated)
   "lecture.aux"
   "lecture.log"
