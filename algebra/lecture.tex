@@ -5501,11 +5501,159 @@
     Базис в пространстве $\Lambda^q$ образуют тензоры $\{e_{i_1} \wedge ... \wedge e_{i_q}\}$ по всем индексам: $1 \leq i_1 < ... < i_q \leq n$.
     $$\text{dim}\Lambda^q(V^*) = C_n^q \text{ при $q \leq n$, иначе 0}$$ 
     $$\Lambda(V^*) = \overset{\infty}{\underset{q=0}{\oplus}} \Lambda(V^*) \Longrightarrow \text{dim}\Lambda(V^*) = 2^n$$
-    $\Lambda(V^*)$ -- внешняя алгебра или алгебра Грассмана. 
+    $\Lambda(V^*)$ -- внешняя алгебра или алгебра Грассмана.\\
+    Рассмотрим тензор типа $T_+^p(V)$ вида 
+    $$T_+^p(V) = \langle \underbrace{e_1 \vee ... \vee e_1}_{k_1} \vee ... \vee \underbrace{e_n \vee ... \vee e_n}_{k_n} \rangle\tab[1cm](\sum\limits_{i} k_i = p)$$
+    $$\underset{(r,0)}{f}\vee \underset{(s,0)}{g} = \text{Sym}(f\otimes g) = g \vee f$$
+    $$f = T^{i_1,...,i_p}\underbrace{e_{i_1} \vee ... \vee e_{i_n}}_{e_1^{k_1}...e_n^{k_n}} $$
+    $$e_1^{k_1}...e_n^{k_n} \longleftrightarrow x_1^{k_1}...x_n^{k_n}$$
+    Изоморфизм векторных пространств: $T_+^p \cong F[x_1,...,x_n]$ -- однородные многочлены степени $p$.\\
+    dim$F[x_1,...,x_n]_p =$ количество неупорядоченных выборок объема $p$ с повторениями из $n$ элементов.
+    $$1...101...101...10.....01...1$$    
+    $n+p-1$ ячеек, $p-1$ нулей, количество $C_{n+p-1}^p$
+    \begin{center}
+        \begin{Large}
+            \textbf{Тензоры на евклидовых пространствах.}
+        \end{Large}
+    \end{center}  
+    $F = \mathbb{R},\ V = \mathcal{E}$ -- евклидово пространство, $\text{dim}\mathcal{E} = n$.\\
+    На $\mathcal{E}$ задано скалярное произведение:
+    $$(x,y) = X^TG_eY, \text{ т.е. } (x,y) = x^ig_{ij}y^i$$  
+    Заметим, что $g_{ij} \in T_2^+(\mathcal{E})$, его называют ковариантным метрическим тензором.
+    \begin{definition}
+        $G_e^{-1} = g^{kl}$ -- контравариантный метрический тензор.
+    \end{definition}
+    \begin{remark}
+        $G\cdot G^{-1} = E$,\tab[1cm]$g_{ij}g^{il} = \delta_j^l$  
+    \end{remark}
+    \begin{center}
+        \textbf{Опускание и подъем индекса.} 
+    \end{center}
+    Обозанчение: $\bullet$ -- вакантное место для индекса.
+    $T_p^q \to T_{p-1}^{q-1}$ по правилу ($p \geq 1$):
+    $$a_k^{ij} = a_{\bullet \bullet k}^{ij \bullet } \to g_{li}a_{\bullet\bullet k}^{ij\bullet} = a_{l\bullet k}^{\bullet j\bullet}\tab[1cm]\text{(1)}$$
+    (1) -- свертка тензора с ковариантным метрическим тензором.\\
+    Подъем индекса -- свертки с $g^{ij}$ :
+    $$a_{i\bullet l}^{\bullet j\bullet} \to g^{kl}a_{i\bullet l}^{\bullet j \bullet} = a_{i\bullet \bullet}^{\bullet jk}$$
+    \textbf{Примеры:}
+    
+    1. Двойственность между пространством и его сопряженным пространством. Пусть $f(x) = a_1x_1 + ... + a_nx_n \longrightarrow a = G\cdot \begin{pmatrix}
+        a_1\\\vdots\\a_n
+    \end{pmatrix}$. Тогда $a^i = g^{ij}a_j$\\
+    Можно написать и обратное соответсвие.
+    
+    2. $\beta(x,y) = (x, \varphi(y)),\ \varphi$ - линейный оператор, присоединенный к билинейной форме $\beta(x,y)$.
+    $$A_\varphi = G^{-1}B,\tab[1cm]a_i^j = g^{ik}b_{kj}$$  
 
+    \begin{remark}
+        На $\mathcal{E}$ можно рассматривать евклидовы тензоры. Тензору сопоставляется многомерная матрица только в О.Н.Б. (и заменять его только на О.Н.Б.)
+    \end{remark}
+    \textbf{На этом с тензорами мы закончим. А сейчас мы докажем рандомыне теоремы из разных тем курса.}
+    \begin{theorem}
+        Пусть $\{\varphi_i|\ i \in I\}$ -- семейство линейных операторов $\varphi_i: V \longmapsto V,\\\text{dim}V = n,\ F = \overline{F}$ (например $F = \mathbb{C}$), $\varphi_i \varphi_j = \varphi_j \varphi_i$. Тогда в $V$ существует общий для них собственный вектор.
+    \end{theorem}
+    \begin{proof}
+        Индукция по $n$.\\
+        База: $n = 1$ -- тривиально.\\
+        Пусть $n > 1$. Если все операторы скалярные, то для любого не равного нулю, вектор подходит. Допустим, что $\varphi_1$ не скалярный оператор и $\lambda_1 \in F$ -- его собственное значение, тогда собственное подпространство $$V_{\lambda_1} = \{v \in V\ |\ \varphi_1(v) = \lambda_1 v\} \neq \{0\}\text{ и } V_{\lambda_1}\neq V$$
+        Покажем, что $V_{\lambda_1} = U$ инвариантно относительно всех $\varphi_j$.\\
+        Рассмотрим $v \in V_{\lambda_1},\ v \neq 0,\ \varphi_1(\varphi_j(v)) = \varphi_j(\varphi_1(v)) = \lambda_1\varphi_j(v) \Longrightarrow \varphi_j(v) \in U$.\\
+        Тогда семейство операторов $\{\varphi_i|_U,\ i \in I\}$ удовлетворяет условию теоремы,\\ $0 < \text{dim}U < n \Longrightarrow $ по предположению индукции, $\exists v_0 \in U,\ v_0 \neq 0$ -- собственный для всех $\varphi_j|_U$ -- он собственный  для всех $\varphi_j$.
 
-
-
+    \end{proof}
+    \begin{center}
+        \textbf{О классификации невырожденных кососимметрических билинейных форм}. 
+    \end{center}
+        $\beta(x,y) = - \beta(x,y),\ \beta(x,y)$ -- билинейная ($\text{char}F \neq 2$). В любом базисе матрица билинейной формы выглядит следующим образом:
+        $$B = \begin{pmatrix}
+            0 & \null & b_{ij}\\
+            \null & \ddots & \null\\
+            -b_{ji} & \null & 0
+        \end{pmatrix}$$   
+        $\text{Ker}\beta(x,y) = \{y \in V|\ \beta(x,y) = 0\}$, т.е. $(x \perp y)$.\\
+        $\beta$ -- невырожденная, если $\text{Ker} \beta = \{0\} \Longleftrightarrow \text{det}B \neq 0$.\\
+        Если $B^T = - B^T$ и $B$ имеет нечетный порядок, тогда $\text{det}B = 0$.\\
+        Будем рассматривать невырожденные формы $\Longrightarrow n = 2m,\ m \geq 1$. 
+        \begin{theorem}
+            Если $\beta(x,y)$ -- невырожденная кососимметрическая билинейная форма, dim$V = n = 2m\ (m \geq 1)$, то в $V$ существует базис $e'$ в котором
+            $$B_{e'} = \begin{pmatrix}
+                0 & 1 & \null & \null & 0\\
+                -1 & \ddots & \ddots & \null & \null\\
+                \null & \ddots & \ddots & \ddots & \null\\
+                \null & \null & \ddots & \ddots & 1\\
+                0 & \null & \null & -1 & 0
+            \end{pmatrix}$$
+        \end{theorem}
+        \begin{proof}\tab[1cm]\\
+            Пусть $\beta \not \equiv 0$,  тогда $\exists e_1,e_2 \in V:\ \beta(e_1,e_2) = b_{12} \neq 0 \Longrightarrow \beta(e_2,e_1) = - b_{12}$
+            $$B = \begin{pmatrix}
+                \begin{matrix}
+                    0 & b_{12} & \vline\\
+                    b_{12} & 0 & \vline\\
+                    \hline                
+                \end{matrix} & \null & \null & \null\\
+                \null & \null & \null & \null\\
+                \null & \null & \null & \null
+            \end{pmatrix}$$ 
+            Можно взять $e'_1 = \frac{e_1}{b_{12}} \Longrightarrow \beta(e'_1, e_2) = 1,\ e'_2 = e_2$ 
+            $$\begin{pmatrix}
+                \begin{matrix}
+                    0 & 1 & \vline\\
+                    -1 & 0 & \vline\\
+                    \hline                
+                \end{matrix} & \null & \null & \null\\
+                \null & \null & \null & \null\\
+                \null & \null & \null & \null
+            \end{pmatrix}$$
+            Если $m = 1$, то все готовою Если $m > 1$, обозначим $U = \langle e'_1, e'_2 \rangle$,\\ $W = U^\perp = \{y \in V|\ \beta(x,y) = 0,\ \forall x \in U\} \Longrightarrow V = U \oplus W$.\\
+            $U^\perp $ задается системой уравнений (они ЛНЗ)
+            $$\begin{cases}
+                \beta(e'_1,y) = 0\\
+                \beta(e'_2,y) = 0
+            \end{cases} \Longrightarrow \text{dim}W = n - 2 = 2(m-1)
+            $$
+            $$U \cap W = \{y \in U|\ \beta(x,y) = 0,\ \forall x \in U\} \overset{?!}{\Longrightarrow}  y = 0.$$
+            Но по предположению индукции существует базис $e'_3,...,e'_{2m}$  в пространстве $W$ в котором
+            $$B_{\beta|_W} = \underset{\tab[0.25cm]e'_3\tab[3.25cm]e'_n}{\begin{pmatrix}
+                0 & 1 & \null & \null & 0\\
+                -1 & \ddots & \ddots & \null & \null\\
+                \null & \ddots & \ddots & \ddots & \null\\
+                \null & \null & \ddots & \ddots & 1\\
+                0 & \null & \null & -1 & 0
+            \end{pmatrix}}$$
+            $B$ имеет нужный $e' = \{e'_1,e'_2,e'_3,...\}$ вид. 
+        \end{proof}
+        \begin{center}
+            \textbf{Некоторые линейные и аффинные группы.} 
+        \end{center}
+        Сначала $G = GL(V)$ -- группа всех линейных невырожденных линейных операторов dim$V < \infty$. Если Ввести базис, то $GL(V) \cong GL(n,F)$ -- группа матриц $(n\times n)$ с det$\neq A$.
+        \begin{itemize}
+            \item Специальная группа $SL(n,F) = \{A_{n\times n}:\ \text{det}A = 1\}$.
+            \item Общая (полная) линейная группа. 
+        \end{itemize}
+        Пусть в $V$ задана билинейная форма $\beta(x,y)$. Скажем, что линейный оператор $\varphi$ сохраняет эту форму, если $\forall x,y \in V:\ \beta(\varphi(x), \varphi(y)) = \beta(x,y)$.\\
+        Обозначим, $G_\beta = \{\varphi:\ \beta(x,y) = \beta(\varphi(x), \varphi(y))\}$.\\
+        В частности, если $b(x,y) = x_1y_1 + ... + x_ny_n$, то $G_b$ -- группа ортогональных операторов. В О.Н.Б. $G_b = O(n,F)$ -- группа ортогонаьльных матриц.\\
+        Если $\beta(x,y) = - \beta(x,y)$ -- невырожденная билинейная форма $(n = 2m)$, то 
+        $G_\beta = \text{Sp}(2m,F)$ -- симплетическая группа.\\
+        В матричном виде:
+        $$X^T(A^TBA)Y = X^TBY \Longleftrightarrow A^TBA = B$$
+        $A$ имеет специфический вид, когда 
+        $$B = \begin{pmatrix}
+            0 & 1 & \null & \null & 0\\
+                -1 & \ddots & \ddots & \null & \null\\
+                \null & \ddots & \ddots & \ddots & \null\\
+                \null & \null & \ddots & \ddots & 1\\
+                0 & \null & \null & -1 & 0
+        \end{pmatrix} \sim \begin{pmatrix}
+            0 & \vline & E_m\\
+            \hline
+            - E_m & \vline & 0
+        \end{pmatrix}$$
+        В аффинном пространстве основная (полная) группа $\text{Aff(n)}$ -- группа аффинных всех преобразований аффинного пространства.
+        $$\forall f = T_u\cdot \Phi,\ \Phi(O) = O$$
+        $$T = \{T_u|\ u \in V\} - \text{ подгруппа || переносов},\ T \cong V$$
+        $$\{\Phi|\ \Phi(O) = O\} \cong \text{GL}(n,F)$$
 
 
 
