@@ -38,48 +38,54 @@
 
 \begin{document}
     \fontsize{14pt}{20pt}\selectfont
-    \begin{center}
-        \begin{Large}            
-            \textbf{Таблица интегралов}
-        \end{Large}
-        \begin{tabular}{l l}\\
-            $\int x^adx = \frac{x^{a+1}}{a + 1} + C\ (a \neq -1)$ &
-            $\int \frac{dx}{a^2 + x^2} = \frac{1}{a}arctg \frac{x}{a} + C\ (a>0)$\\\\
-            $\int \frac{dx}{x} = \ln |x| + 1,\ x \neq 0$ &
-            $\int \frac{dx}{a^2 - x^2} = \frac{1}{2a}\ln \frac{|a + 1|}{|a - x|} + C\ (a > 0)$\\\\
-            $\int a^xdx = \frac{a^x}{\ln a} + C\ (a > 0, a \neq 1)$ &
-            $\int \frac{dx}{\sqrt{a^2 - x^2}} = \arcsin \frac{x}{a} + C\ (a > 0)$\\\\
-            $\int e^xdx = e^x + C$ &
-            $\int \frac{dx}{\sqrt{x^2 + k}} = \ln|x + \sqrt{x^2 + k}| + C\ (k \neq 0)$\\\\
-            $\int \sin xdx = -\cos x + C$ & $\int\sh xdx = \ch x + C$\\\\
-            $\int \cos xdx = \sin x + C$ & $\int \ch xdx = \sh x + C$\\\\
-            $\int \frac{dx}{\cos^2 x} = \tg x + C$ &
-            $\int \frac{dx}{sh^2 x} = -\cth x + C$\\\\
-            $\int \frac{dx}{\sin^2 x} = -\ctg x + C$ &
-            $\int \frac{dx}{ch^2 x} = \th x + C$
-        \end{tabular}     
-    \end{center}
-    \begin{center}
-        \textbf{Методы решения}
-    \end{center}
-    \underline{По частям}:$\int udv = uv - \int vdu$\\
-    $\\$\underline{Метод Остроградского}: $\int \frac{P_n(x)}{Q_m(x)}dx =
-    \frac{P_{m-k-1}}{Q_{m-k}} + \int \frac{R_{k-1}(x)}{Q_k(x)}dx$\\
-    $\\$\underline{Иррациональные функции}: $\int \frac{P_n(x)}{y}dx =
-    Q_{n-1}(x)y + \lambda\int \frac{dx}{y},\ y = \sqrt{ax^2 + by + c}$\\
-    $\\$\underline{Освновная тригонометрическая замена:}
-    $t = \tg \frac{x}{2},\ \sin x = \frac{2\tg \frac{x}{2}}
-    {1 + \tg^2\frac{x}{2} },\ \cos x = \frac{1 - \tg^2 \frac{x}{2}}
-    {1 + \tg^2 \frac{x}{2}}$\\$\\$
-    \underline{Другие способы:} $\int \frac{a_1\sin x + 
-    b_1\cos x + c_1}{a\sin x + b\cos y + c}dx = Ax + B\ln|
-    a\sin x + b\cos y + c| +$
-    \begin{flushright}
-        $+ C\int \frac{dx}{a\sin x + b\cos y + c} $     
-    \end{flushright}
+    \begin{tabular}{l l l}
+        $\tab[-0.2cm]\int \frac{dx}{a^2 + x^2} = \frac{1}{a}arctg \frac{x}{a}\ (a>0)$ & 
+        $\int \frac{dx}{a^2 - x^2} = \frac{1}{2a}\ln \frac{|a + 1|}{|a - x|}$ & 
+        $\int \frac{dx}{\sqrt{a^2 - x^2}} = \arcsin \frac{x}{a}$\\
+        $\tab[-0.2cm]\int \frac{dx}{\sqrt{x^2 \pm a^2}} = \ln|x + \sqrt{x^2 \pm a^2}|$ & 
+        $\int \frac{dx}{sh^2 x} = -\cth x$  &
+        $\int \frac{dx}{ch^2 x} = \th x$
+    \end{tabular}
+
+    $\int \frac{P_n(x)}{Q_m(x)}dx = \frac{P_{m-k-1}}{Q_{m-k}} + \int \frac{R_{k-1}(x)}{Q_k(x)}dx$
+
+    $\int \frac{P_n(x)}{y}dx = Q_{n-1}(x)y + \lambda\int \frac{dx}{y},\ y = \sqrt{ax^2 + by + c}$
+
+    $t = \frac{x + a}{x + b} \Longrightarrow dt = \frac{(b-a)dx}{(x + b)^2}$ ИЛИ $x = \frac{bt - a}{t - 1} \Longrightarrow x + a = \frac{(a - b)t}{t - 1}$ и $x + b = \frac{a - b}{t - 1} $   
+    
+    $t = \tg \frac{x}{2},\ \sin x = \frac{2t}{1 + t^2},\ \cos x = \frac{1 - t^2}{1 + t^2}$
+
+    $\int \frac{a_1\sin x + b_1\cos x + c_1}{a\sin x + b\cos y + c}dx = Ax + B\ln|a\sin x + b\cos y + c| + C\int \frac{dx}{a\sin x + b\cos y + c} $
+
     $\int\sin^nxdx = -\frac{1}{n}\cos x\sin^{n-1} x + 
-    \frac{n-1}{n}\int\sin^{n-2}xdx$\\
+    \frac{n-1}{n}\int\sin^{n-2}xdx$
+
     $\int\cos^nxdx = \frac{1}{n}\sin x\cos^{n-1} x + 
     \frac{n-1}{n}\int\cos^{n-2}xdx$ 
 
+    \tab[1cm]\\
+    \tab[1cm]\\
+    \tab[1cm]\\
+    \tab[1cm]\\
+    \tab[1cm]\\
+    \tab[1cm]
+
+    $\int_{0}^{\frac{\pi}{2}} f(\sin x)dx = \int_{0}^{\frac{\pi}{2}} f(\cos x)dx$\tab[1cm]
+    $\int_{0}^{\pi} xf(\sin x)dx = \frac{\pi}{ 2} \int_{0}^{\pi} f(\sin x)dx$
+
+    $F(x) = \int_{\varphi_1(x)}^{\varphi_2(x)} f(t)dt \Longrightarrow F'(x) = f(\varphi_2(x))\varphi'_2(x) - f(\varphi_1(x))\varphi'_1(x)$
+    
+    $S = \int_{T_0}^{T_1} x(t)y'(t)dt = -\int_{T_0}^{T_1} x'(t)y(t)dt = \frac{1}{2}\int_{\alpha}^{\beta} r^2(\varphi)d \varphi$
+    
+    $V_{ox} = \pi \int_{a}^{b}f^2(x)dx = \pi \int_{a}^{b} y^2(x)x'dt$ 
+
+    $V_{oy} = \pi \int_{a}^{b} f(x)dx^2 = 2\pi \int_{t_1}^{t_2} x(t)y(t)dx(t)$ 
+
+    $|\Gamma| = \int_{T_0}^{T_1} \sqrt{(x'(t))^2 + (y'(t))^2 + (z'(t))^2}dt$
+    
+    $|\Gamma| = \int_{a}^{b} \sqrt{1 + (y')^2}dx$
+    
+    $|\Gamma| = \int_{\alpha}^{\beta} \sqrt{(r(\varphi))^2 + (r'(\varphi))^2}d \varphi =$
+    $ \int_{\alpha}^{\beta} \sqrt{r^2\cdot (\varphi')^2 + (r')^2}\cdot sgn(\varphi')d \varphi$ 
+    
 \end{document}

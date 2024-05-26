@@ -255,8 +255,6 @@ INPUT integral.aux
 INPUT integral.aux
 OUTPUT integral.aux
 INPUT /home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm
-INPUT /home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1728.tfm
-INPUT /home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1728.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cmap/ot1.cmap
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cmap/ot1.cmap
@@ -289,13 +287,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT integral.aux
 INPUT /home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk
 INPUT /home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk
-INPUT /home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk
-INPUT /home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb

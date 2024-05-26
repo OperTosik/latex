@@ -1,16 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1710438201 "/home/tosik/latex/analyze/integral.tex" "integral.pdf" "integral" 1710438201
+["pdflatex"] 1716717026 "/home/tosik/latex/analyze/integral.tex" "integral.pdf" "integral" 1716717026
   "/etc/texmf/web2c/texmf.cnf" 1708452357 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk" 1708889715 36828 3c5d42b07817af82ef9004c00ab676e5 ""
-  "/home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk" 1708889714 45148 b39b331cdbeeb2c2bf1f7387d18045a0 ""
   "/home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk" 1708889712 27004 69b806bf07a628783a6c9a76a86c520d ""
   "/home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk" 1708889714 32576 d79d730634ba76c9f91cd3207dc2a76e ""
-  "/home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1708889715 3304 6a543c07045572737981351171e0505e ""
-  "/home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1728.tfm" 1708889714 3312 d199be9bd555944e2403193d58a0256a ""
   "/home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1708889712 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1708889714 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
-  "/home/tosik/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1728.tfm" 1708889713 3252 92d08740ce00199d6cf9ff4aaada81d1 ""
-  "/home/tosik/latex/analyze/integral.tex" 1710438201 3641 0f4b639ab6d34a23d7060d3ad1311914 ""
+  "/home/tosik/latex/analyze/integral.tex" 1716717025 3618 6b0bca64587277300288b968f7496bfe ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -66,9 +61,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1709807300 130486 21bc5e8519b511467dceb304d5a8239d ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1709807309 1481576 baa30f5f719dc507b0ce8769b8d8d976 ""
-  "integral.aux" 1710438201 132 c89ce2280ab791babe7d68932f1c9de6 "pdflatex"
-  "integral.tex" 1710438201 3641 0f4b639ab6d34a23d7060d3ad1311914 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1710590521 1481311 da114de494fa91a9291d36e96cb0f44a ""
+  "integral.aux" 1716717026 132 c89ce2280ab791babe7d68932f1c9de6 "pdflatex"
+  "integral.tex" 1716717025 3618 6b0bca64587277300288b968f7496bfe ""
   (generated)
   "integral.aux"
   "integral.log"
