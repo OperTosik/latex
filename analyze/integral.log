@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  26 MAY 2024 12:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  26 MAY 2024 13:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -419,7 +419,6 @@ LaTeX Info: Redefining \th on input line 39.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 41.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
 LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -432,18 +431,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./integral.aux) ) 
 Here is how much of TeX's memory you used:
- 4464 strings out of 479721
- 64455 string characters out of 5887697
+ 4436 strings out of 479721
+ 64042 string characters out of 5887697
  380791 words of memory out of 5000000
- 22379 multiletter control sequences out of 15000+600000
- 473988 words of font info for 43 fonts, out of 8000000 for 9000
+ 22362 multiletter control sequences out of 15000+600000
+ 471809 words of font info for 34 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  55i,9n,62p,259b,147s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on integral.pdf (1 page, 95027 bytes).
+ </home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/tosik/.texlive2021/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm0500.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+Output written on integral.pdf (1 page, 50780 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
