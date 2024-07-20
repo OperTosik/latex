@@ -1,0 +1,2 @@
+.config/Code/User/globalStorage/draivin.hsnips/hsnips
+path to file latex.hsnips
