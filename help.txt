@@ -1,6 +1,0 @@
-26 стр - символы над и сбоку матрицы
-38 стр - brace over and under
-
-11 страница - утверждение 1 (хз что делать с доказательством)
-
-/.config/Code/User/globalStorage/draivin.hsnips/hsnips
