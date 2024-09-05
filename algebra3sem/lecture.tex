@@ -1,0 +1,226 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
+% \usepackage{mathtext}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\usepackage{amsthm}
+\usepackage{booktabs}
+% \usepackage{nicematrix}
+\usepackage{graphicx}
+% \usepackage{tikz}
+% \usepackage{parskip}
+
+%Реализация aug, overbrace и underbrace без nice matrix
+\newcommand\aug{\fboxsep=-\fboxrule\!\!\!\fbox{\strut}\!\!\!}
+\newcommand\undermat[2]{\makebox[0pt][l]{$\smash{\underbrace
+{\phantom{\begin{matrix}#2\end{matrix}}}_{\text{$#1$}}}$}#2}
+\newcommand\overmat[2]{\makebox[0pt][l]{$\smash{\overbrace
+{\phantom{\begin{matrix}#2\end{matrix}}}^{\text{$#1$}}}$}#2}
+\newcommand\tab[1][.5cm]{\hspace*{#1}}
+\newcommand\Underset[2]{\underset{\textstyle #1}{#2}}
+\newcommand\Overset[2]{\overset{\textstyle #1}{#2}}
+
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Определение}
+\newtheorem*{theorem}{Теорема}
+\newtheorem*{consequense}{Следствие}
+\newtheorem*{lemma}{Лемма}
+\newtheorem*{subtheorem}{Утверждение}
+\newtheorem*{remark}{Замечание}
+
+\usepackage[russian]{babel}
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Содержание}%
+}
+
+\usepackage{titlesec}
+\titleformat{\section}{\LARGE \bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\Large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{1em}{}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+% Цвета для гиперссылок
+\definecolor{linkcolor}{HTML}{225ae2} % цвет ссылок
+\definecolor{urlcolor}{HTML}{225ae2} % цвет гиперссылок
+\hypersetup{
+    pdfstartview=FitH, 
+    linkcolor=linkcolor,
+    urlcolor=urlcolor,
+    colorlinks=true
+}
+
+\title{\textbf{Алгебра}}
+\author{Ким Никита, 211 группа}
+
+\begin{document}
+\fontsize{14pt}{20pt}\selectfont
+    \maketitle
+    \newpage
+    \tableofcontents
+    \fontsize{14pt}{20pt}\selectfont
+    \newpage
+    
+    \section{Лекция 2 (краткие выкладки)}
+    \begin{definition}
+        Пусть $G,H$ -- группы. \textit{Прямым произведением} $G\times H$ называется множество $\{(g,h)\ |\ g \in G,\ h \in H\}$ с операцией $(g_1, h_1)\cdot (g_2,h_2) = (g_1g_2, h_1h_2)$   
+    \end{definition}
+
+    \begin{lemma}
+        $G\times H$ -- группа.
+    \end{lemma}
+    \begin{proof}
+        Очевидно.
+    \end{proof}
+
+    \begin{definition}
+        $(G, *)$ и $(H, \circ)$ -- группы. $\varphi: G \longrightarrow H$ -- гоморфизм, если $\varphi(g_1 * g_2) = \varphi(g_1)\circ \varphi(g_2)$   
+    \end{definition}
+
+    \textbf{Примеры:}
+    \begin{enumerate}
+        \item $\mathbb{Z} \longrightarrow \mathbb{Z}_n$, т.е. $a \to a\ (mod\ n)$  
+        \item $GL_n(\mathbb{C}) \longrightarrow \mathbb{C}^*$, т.е. $A \to det\ A$ 
+    \end{enumerate}
+     
+    \begin{definition}
+        \textit{Изоморфизм} -- биективный гомоморфизм. 
+    \end{definition}
+    
+    \textbf{Примеры:}
+    \begin{enumerate}
+        \item $\mathbb{Z}_n \cong \mathbb{C}_n$, т.е. $k \to e^{\frac{2\pi ki}{n}} = \cos \frac{2\pi}{n}k + i\sin \frac{2\pi}{n}k$
+        \item $(\mathbb{R}, +) \cong (\mathbb{R}_{>0}, \cdot)$, т.е. $x \to e^x$   
+    \end{enumerate}
+
+    \begin{lemma}
+        Пусть $\varphi: G \longrightarrow H$ -- гомоморфизм. Тогда $\varphi(e_G) = e_H$  и $\varphi(g^{-1}) = (\varphi(g))^{-1}$   
+    \end{lemma}
+     \begin{proof}
+        $$\underbrace{\varphi(e_G\cdot e_G)}_{\varphi(e_G)} = \varphi(e_G)\cdot \varphi(e_G)\ \vline\ \cdot \varphi(e_G)^{-1} \Longleftrightarrow e_H = \varphi(e_G)$$
+        $$\varphi(g^{-1})\cdot \varphi(g) = \varphi(gg^{-1}) = \varphi(e_G) = e_H$$
+     \end{proof}
+    
+    \begin{subtheorem}
+        Отношение быть изоорфными -- это отношение эквивалентности.
+    \end{subtheorem}
+    \begin{proof}
+        Не совсем очевидно может быть доказательство транзитивности:
+        $$\varphi: G \cong H,\ \psi: H \cong K \Longrightarrow \psi\circ \varphi: G \longrightarrow K \text{ явл. изоморфизмом}$$
+    \end{proof}
+
+    \begin{subtheorem}
+        Пусть $(G, *)$ -- группа, $(H, \circ)$ -- группоид. $\exists \varphi: G \longrightarrow H$ -- гомоморфизм + биекция (изоморфизм группоидов). Тогда $(H, \circ)$ -- группа и $\varphi$ -- изоморфизм групп.  
+    \end{subtheorem}
+    \begin{proof}
+        В конспекте Гайффулина.
+    \end{proof}
+
+    \subsection{Кватернионы}
+    $\overline{Q_8} \subseteq GL_2(\mathbb{C})$
+    $$\overline{Q_8} = \{\underbrace{\pm \begin{pmatrix}
+        1 & 0\\0 & 1
+    \end{pmatrix}}_{\pm 1},\ \underbrace{\pm \begin{pmatrix}
+        i & 0\\0 & -i
+    \end{pmatrix}}_{\pm i},\ \underbrace{\pm \begin{pmatrix}
+        0 & 1\\-1 & 0
+    \end{pmatrix}}_{\pm j},\underbrace{\pm \begin{pmatrix}
+        0 & i\\i & 0
+    \end{pmatrix}}_{\pm k}\}$$
+
+    $\begin{cases}
+        \varphi - \text{ изоморфизм группойдов}\\
+        Q_8 \longrightarrow \overline{Q_8}
+    \end{cases} \Longrightarrow \varphi - \text{ изоморфизм групп.}$
+    
+    \begin{definition}
+        Пусть $\varphi: G \longrightarrow H$ -- гомоморфизм. \textit{Ядро} $\varphi$ -- это $Ker\ \varphi = \{g \in G\ |\ \varphi(g) = e\} \subseteq G.$  \textit{Образ} $\varphi$ -- это $Im\ \varphi = \{\varphi(g)\ |\ g \in G\} \subseteq H$.   
+    \end{definition}
+
+    \begin{theorem}
+        \begin{enumerate}
+            \item $Ker\ \varphi$ -- подгруппа в $G$.
+            \item $Im\ \varphi$ -- подгруппа в $H$.    
+        \end{enumerate}
+    \end{theorem}
+    \begin{proof}$\\$
+        1. $g_1, g_2 \in Ker\ \varphi \Longrightarrow \varphi(g_1) = e,\ \varphi(g_2) = e \Longrightarrow \varphi(g_1g_2) = \varphi(g_1)\varphi(g_2) = e\cdot e = e.$\\
+        Т.о. $g_1g_2 \in Ker\ \varphi$. Далее, пусть $g \in Ker\ \varphi$
+        $$\varphi(g^{-1}) = \varphi^{-1}(g) = e^{-1} = e \Longrightarrow g^{-1} \in Ker\ \varphi$$
+        2. $a,b \in Im\ \varphi \Longrightarrow a = \varphi(g),  = \varphi(g')$
+        $$ab = \varphi(g)\varphi(g') = \varphi(gg') \Longrightarrow ab \in Im\ \varphi$$
+        Далее, пусть $a \in Ker\ \varphi$
+        %пропуск 
+    \end{proof}
+
+    \begin{theorem}
+        (Критерий инъективности гомоморфизма)\\
+        $\varphi: G \longrightarrow H$ -- гомоморфизм. Тогда $\varphi$ -- инъекция $\Longleftrightarrow Ker\ \varphi = \{e\}$.  
+    \end{theorem}
+    \begin{proof}
+        $\Longrightarrow$ очевидно.\\
+        $\Longleftarrow$ От противного: пусть $\varphi$ -- не инъекция. Тогда $\exists x \neq y:\ \varphi(x) = \varphi(y)$.
+        $$\underbrace{\varphi(x)}_{\varphi(xy^{-1})}\varphi^{-1}(y) = \varphi(y)\varphi^{-1}(y = e) \Longrightarrow \underbrace{xy^{-1}}_{\neq e} \in Ker\ \varphi$$
+    \end{proof}
+
+    \begin{definition}
+        Степень $g \in G:\ n \in \mathbb{N}\ g^n = \underbrace{g\cdot...\cdot g}_{n}$ и $g^{-n} = \underbrace{g^{-1}\cdot...\cdot g^{-1}}_{n}$, ну и $g^0 = e$ 
+    \end{definition}
+
+    \textbf{Свойства:}
+    \begin{itemize}
+        \item $g^a\cdot g^b = g^{a + b},\ g \in G$
+        \item $(g^a)^b = g^{ab},\ a,b \in \mathbb{Z} $
+    \end{itemize}
+     
+    \begin{definition}
+        $ord(g) = \begin{cases}
+            min\ n \ \in \mathbb{N}:\ g^m = e \text{ если } \exists\\
+            \infty \text{ иначе}
+        \end{cases}$
+    \end{definition}
+
+    \begin{definition}
+        Группа $G$ называется \textit{циклической} (порожденной элементом $g$), если $G = \{e, g, g^{-1}, g^2, g^{-2},...\}$ и обозначается $G = \langle g\rangle$ 
+    \end{definition}
+
+    \begin{theorem}
+        (О классификации циклических групп)\\
+        Пусть $G = \langle g\rangle$. Тогда если $ord\ g = \infty$, то $G \cong \mathbb{Z}$, а если $ord\ g = n$,то $G \cong \mathbb{Z}_n.$    
+    \end{theorem}
+    \begin{proof}
+        Пусть $ord\ g = \infty$. Рассмотрим $\varphi: \mathbb{Z} \longrightarrow G$, т.е. $k \to g^k$.
+        $$\varphi(k_1 + k_2) = g^{k_1 + k_2} = g^{k_1}\cdot g^{k_2} = \varphi(k_1)\cdot \varphi(k_2) \Longrightarrow \varphi - \text{гомоморфизм.}$$   
+        $\varphi$ -- сюръекция по определению. Докажем инъективность.
+        $$Ker\ \varphi = \{k \in \mathbb{Z}\ |\ \underbrace{\varphi(k)}_{g^k} = e\}$$ 
+        Если $\varphi$ -- не инъективно, то $Ker\ \varphi \neq \{0\} \Longrightarrow k \neq 0:\ g^k = e$. Тогда $g^{-k} = (g^k)^{-1} = e$. Т.е. либо $k \geq 0$, либо $-k > 0$.\\
+        Теперь пусть порядок $ord\ g = n$. Рассмотрим ту же функцию $\varphi$. Доопределим классы эквивалентности: $g^{\overline{k}} = g^k$. Тогда $g(\overline{k}) = g^{\overline{k}}$, но нужно проверить корректность:
+        $$k \equiv k' (mod\ n) \overset{?}{\Longrightarrow} g^k = g^{k'}$$
+        $$\text{ББО } k > k' \Longrightarrow k - k' = m\cdot n \Longrightarrow g^k = g^{k' + mn} = g^{k'}\cdot (\underbrace{g^n}_{e})^m = g^{k'}$$
+        $$\varphi(\overline{k_1} + \overline{k_2}) = g^{k_1 + k_2} = g^{\overline{k_1}}g^{\overline{k_2}} \Longrightarrow \varphi - \text{ гомоморфизм.}$$
+        Далее, $\begin{cases}
+            g^{n + 1} = g\\
+            g^{n + 2} = g^2\\
+            \vdots\\
+            g^{-1} = g^{n-1}\\
+        \end{cases} \Longrightarrow G = \{e, g,...,g^{n-1}\} \Longrightarrow \varphi - \text{ сюръективно}.$
+        $g^m = g^s \Longrightarrow g^{m-s} = e, \text{ где } n > m > s \geq 0 \Longrightarrow n > m - s \geq 0$ противоречие с $ord\ g  =n$ 
+    \end{proof}
+
+    \begin{consequense}
+        \begin{enumerate}
+            \item $|G| = ord\ g$
+            \item Если $ord\ g = \infty$, то $G = \{e, g, g^{-1},...\}$, а если $ord\ g = n$, то $G = \{e, g,..., g^{n-1}\}$
+        \end{enumerate}
+        
+    \end{consequense}
+
+\end{document}

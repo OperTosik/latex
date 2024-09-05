@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1722551693.56414 "/Users/tosik/latex/temp/app.tex" "app.pdf" "app" 1722551693.88046 0
+["pdflatex"] 1723486291.43313 "/Users/tosik/latex/temp/app.tex" "app.pdf" "app" 1723486291.74215 0
   "/Users/tosik/Library/texlive/2024/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1722551690.60907 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/Users/tosik/Library/texlive/2024/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1722551692.9289 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
-  "/Users/tosik/latex/temp/app.tex" 1722550234.86669 1370 b0be4d905e57e7f8f32bdda105d36d6e ""
+  "/Users/tosik/latex/temp/app.tex" 1722638456.72983 1413 980ddb6b37c3c1d4608acafe56cf0b8f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1136849721 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -31,8 +31,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1722551358.27872 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1722551294 8221453 47c8151f73e56d049e3a3625f90e61ee ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "app.aux" 1722551693.8277 132 c89ce2280ab791babe7d68932f1c9de6 "pdflatex"
-  "app.tex" 1722550234.86669 1370 b0be4d905e57e7f8f32bdda105d36d6e ""
+  "app.aux" 1723486291.71041 132 c89ce2280ab791babe7d68932f1c9de6 "pdflatex"
+  "app.tex" 1722638456.72983 1413 980ddb6b37c3c1d4608acafe56cf0b8f ""
   (generated)
   "app.aux"
   "app.log"

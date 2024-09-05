@@ -1,0 +1,241 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
+% \usepackage{mathtext}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\usepackage{amsthm}
+\usepackage{booktabs}
+% \usepackage{nicematrix}
+\usepackage{graphicx}
+% \usepackage{tikz}
+% \usepackage{parskip}
+
+%Реализация aug, overbrace и underbrace без nice matrix
+\newcommand\aug{\fboxsep=-\fboxrule\!\!\!\fbox{\strut}\!\!\!}
+\newcommand\undermat[2]{\makebox[0pt][l]{$\smash{\underbrace
+{\phantom{\begin{matrix}#2\end{matrix}}}_{\text{$#1$}}}$}#2}
+\newcommand\overmat[2]{\makebox[0pt][l]{$\smash{\overbrace
+{\phantom{\begin{matrix}#2\end{matrix}}}^{\text{$#1$}}}$}#2}
+\newcommand\tab[1][.5cm]{\hspace*{#1}}
+\newcommand\Underset[2]{\underset{\textstyle #1}{#2}}
+\newcommand\Overset[2]{\overset{\textstyle #1}{#2}}
+
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Определение}
+\newtheorem*{theorem}{Теорема}
+\newtheorem*{consequense}{Следствие}
+\newtheorem*{lemma}{Лемма}
+\newtheorem*{subtheorem}{Утверждение}
+\newtheorem*{remark}{Замечание}
+
+\usepackage[russian]{babel}
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Содержание}%
+}
+
+\usepackage{titlesec}
+\titleformat{\section}{\LARGE \bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\Large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{1em}{}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+% Цвета для гиперссылок
+\definecolor{linkcolor}{HTML}{225ae2} % цвет ссылок
+\definecolor{urlcolor}{HTML}{225ae2} % цвет гиперссылок
+\hypersetup{
+    pdfstartview=FitH, 
+    linkcolor=linkcolor,
+    urlcolor=urlcolor,
+    colorlinks=true
+}
+
+\title{\textbf{Алгебра. 1 семестр, Куликова}}
+\author{Ким Никита, 211 группа}
+
+\begin{document}
+\fontsize{14pt}{20pt}\selectfont
+    \maketitle
+    \newpage
+    \tableofcontents
+    \fontsize{14pt}{20pt}\selectfont
+    \newpage
+    
+    \section{Системы линейных уравнений}
+    \subsection{Матрица. Освноные понятия}
+    \begin{definition}
+        Матрица $A$ размера $m\times n$ --   прямоугольная таблица с $m$ строками и $n$ столбцами 
+        $$A = \begin{pmatrix}
+            a_{11} && a_{12} && \dots && a_{1n}\\
+            \vdots && \null && \null && \vdots\\
+            a_{n1} && a_{n2} && \null && a_{nn}
+        \end{pmatrix}$$
+        $a_{ij}$ -- элемент матрицы и индексы:
+        
+        $i$ -- номер строки
+        
+        $j$ -- номер столбца\\
+        $M_{m\times n}(\mathbb{R})$ -- множество всех матриц размера $m\times n$ c элементами из $\mathbb{R}$.
+    \end{definition}
+    Матрица размера $m\times 1$  называется столбцом $$A = \begin{pmatrix}
+        a_{11}\\ \vdots\\ a_{m1}
+    \end{pmatrix}$$
+    Если $A = (a_{ij})$ -- квадратная, $a_{ij} = 0\ \forall i \neq j$, то $A$ называется диагональной.
+    $$A = \begin{pmatrix}
+        a_{11} && \null && \null && 0\\
+        \null && a_{22} && \null && \null\\
+        \null && \null && \ddots && \null\\
+        0 && \null && \null && a_{nn}
+    \end{pmatrix}$$   \\
+    Если $A$ -- диагональная и $a_{ii} = 1$, то $A$ называется единичной.
+    $$A = \begin{pmatrix}
+        1 && \null && \null && 0\\
+        \null && 1 && \null && \null\\
+        \null && \null && \ddots && \null\\
+        0 && \null && \null && 1
+    \end{pmatrix}$$
+    Если  $A$ -- квадратная, то 
+    $$A = \begin{pmatrix}
+        a_{11} && \null && \null && \null\\
+        \null && a_{22} && \null && \null\\
+        \null && \null && \ddots && \null\\
+        \null && \null && \null && a_{nn}
+    \end{pmatrix}$$ 
+    главная диагональ, а 
+    $$A = \begin{pmatrix}
+        \null && \null && \null && a_{1n}\\
+        \null && \null && a_{2,n-1} && \null\\
+        \null && \ddots && \null && \null\\
+        a_{n1} && \null && \null && \null
+    \end{pmatrix}$$
+    побочной диагональю.
+    \begin{definition}
+        Если $A$ -- размера $m\times n$, $a_{ij} = 0\ \forall i,j$, то $A$ называется нулевой.   
+    \end{definition}
+    \subsection{Система линейных (алгебраических) уравнений}
+    $(*)\begin{cases}
+        a_{11}x_1 + ... + a_{1n}x_n = b_1\\
+        a_{21}x_1 + ... + a_{2n}x_n = b_2\\
+        \vdots\\
+        a_{n1}x_1 + ... + a_{nn}x_n = b_n
+    \end{cases}$\\$\\$
+    $a_{ij}, b \in \mathbb{R}, x_1,...,x_n$ -- неизвестные.
+    $$A = \begin{pmatrix}
+        a_{11} && \dots && a_{1n}\\
+        \vdots && \null && \vdots\\
+        a_{n1} && \dots && a_{nn}
+    \end{pmatrix}\tab[1cm]B = \begin{pmatrix}
+        b_{1}\\\vdots\\b_m
+    \end{pmatrix}$$
+    $A$ -- матрица коэффициентов, $a_{ij}$ называется коэфициентом СЛУ.\\
+    $B$ -- столбец свободных членов, $b_j$ -- свободный член.
+    \begin{definition}
+        Расширенная матрица $\underset{m\times (n+1)}{(A|B)}$. Набор чисел $x_1^0,...,x_n^0 \in \mathbb{R}$ называется решением системы $(*)$, если подстановка этих чисел вместо неизвестных в $(*)$ дает тождество в каждом уравении. ($x_i^0 \longleftrightarrow x$) 
+    \end{definition}
+    Решить систему -- это найти все решения системы. Любое конткретное решение называется частным.
+
+    \begin{definition}
+        Если СЛУ имеет решение, то она называется совместной, иначе несовместной.
+    \end{definition}
+    \begin{definition}
+        Совместная система, имеющая одно решение называется определенной, иначе неопределенной (решений более одного).
+    \end{definition}
+    \subsection{Элементарные преобразования над СЛУ}
+    \begin{enumerate}
+        \item Прибавить к одному уравнению другое уравнение умноженное на число $\lambda \in \mathbb{R}$ 
+        \item Поменять местами два уравнения
+        \item Можем умножить уравненние на ненуленое число $\mu \in \mathbb{R}$ 
+    \end{enumerate}
+    \begin{subtheorem}
+        Эти преобразования обратимы.
+    \end{subtheorem}
+    \begin{definition}
+        Две системы линейных уравнений называюся эквивалентными, если их множество решений совпадают.
+    \end{definition}
+    \begin{subtheorem}
+        Если одна СЛУ получена из другой СЛУ с помощью конечного числа элементарных преобразований, то эти системы эквивалентны.
+    \end{subtheorem}
+    \begin{proof}
+        Достаточно доказать, что если $AX = B$ и $\widetilde{A}X = \widetilde{B}$ получены с помощью одного элементарного преобразования, то они эквивалентны.\\
+        Пусть $x_1^0,...,x_n^0$ -- произвольное решение $AX = B$.\\
+        Докажем, что $x_1^0,...,x_n^0$ является решением системы $\widetilde{A}X = \widetilde{B}$.\\
+        Для 2 пункта очевидно.
+        Для 3: предположим, что $$a_{i1}x_1 +...+ a_{in}x_n = b_i \text{ в } AX = B$$
+        $$(\mu a_{i1})x_1 +...+ (\mu a_{in})x_1n = \mu b_i \text{  в } \widetilde{A}X = \widetilde{B}$$
+        Если $a_{i1}x_1 +...+ a_{in}x_n = b_i$, то $(\mu a_{i1})x_1 +...+ (\mu a_{in})x_1n = \mu b_i$.\\
+        Остальные уравнения такие же $\mu (a_{i1}x_1 +...+ a_{in}x_n) = (\mu)b_i$\\
+        1 пункт: д/з.\\
+        Т.о. множество решений $AX = B$ включено в множество решений $\widetilde{A}B = \widetilde{B}$.\\
+        В обратную сторону аналогично (для доказательства эквивалентности), используя обратимость элементарных преобразований.
+    
+    \end{proof}
+    Мораль в том, что мы можем работать с расширенной матрицей $(A|B)$.
+    \subsection{Элементарное преобразование над матрицами}
+    \textbf{Элементраные преобразования над строкаим матрицы:}
+    $$A = \begin{pmatrix}
+        \overline{a_1}\\\vdots\\\overline{a_n}
+    \end{pmatrix},\text{ где } \overline{a_i} - \text{ строка}$$
+    \begin{itemize}
+        \item ЭП1: $\overline{a_i} \to \overline{a_i} + \lambda\overline{a_j}$
+        \item ЭП2: $\overline{a_i} \longleftrightarrow \overline{a_j}$ 
+        \item ЭП3: $\overline{a_i} \to \mu \overline{a_i},\ \mu \neq 0$ 
+    \end{itemize}
+    \begin{definition}
+        Лидер строки (ведущий элемент) -- это 1-й ненулевой элемент слева.\\
+        \textbf{Пример:}
+        $(0, 0, \underbrace{3}_{\text{лидер}}, 4, 5, 0, 0, 7)$ 
+    \end{definition}
+    \begin{definition}
+        Матрица $A$ размера $m\times n$ называется ступенчатой, если
+        \begin{enumerate}
+            \item Номера лидеров ненулевых строк строго возврастают с увеличением номера строки.
+            \item Все нулевые строки стоят внизу (в конце).
+        \end{enumerate}
+    \end{definition}
+    \begin{theorem}
+        Любую матрицу $A$ размера $m\times n$ за конечное число элементарных преобразований над строками можно привести к ступенчатому виду.
+    \end{theorem}
+    \begin{proof}
+        Индукция по $n:$\\
+        Если $A$ -- нулевая, то $A$ -- ступенчатого вида.ёё
+        Если $A \neq 0:$ найдем первый ненулевой столбец (начиная слева). Пусть $j$ -- номер первого ненулевого столбца. Пусть $a_{ij} \neq 0:$
+        $$A = \begin{pmatrix}
+            0 && 0 && && \null\\
+            \vdots && \vdots && \null\\
+            \null && \null && a_{ij}\\
+            \vdots && \vdots && \null\\
+            0 && 0 && \null
+        \end{pmatrix}$$  
+        Меняем 1-ю и i-ю строки местами и получаем, что $a_{ij}$ стал лидером первой строки. Считаем, что сразу $a_{1j} \neq 0:$
+        $$A = \begin{pmatrix}
+            0 && 0 && a_{1j} && *\\
+            \vdots && \vdots && * && *\\
+            \null && \null && \vdots && \null\\
+            \vdots && \vdots && \vdots && \null\\
+            0 && 0 && \vdots && \null
+        \end{pmatrix}$$  
+        Вычитаем из каждой k-й строки, начиная со 2-й 1-ю строку, умноженную на число $\frac{a_{kj}}{a_{1j}}$. Получаем вид:
+        $$\widetilde{A} = \begin{pmatrix}
+            0 && 0 && \vline && *\\
+            \vdots && \vdots && \vline &&  * && *\\
+            \null && \null && \vline && \vdots && \null\\
+            \vdots && \vdots && \vline && \vdots && \null\\
+            0 && 0 && \vline &&  \vdots && \null
+        \end{pmatrix}$$ 
+        К правой части матрицы применяем и ндукцию и приводим матрицу к ступенчатому виду.
+
+    \end{proof}
+    \begin{remark}
+        Этот метод называется методом Гаусса.
+    \end{remark}
+    
+
+\end{document}
