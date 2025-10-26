@@ -1,0 +1,7 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Мат. аппарат и определения}{3}{section.1}%
+\contentsline {section}{\numberline {2}Описание Gaussian Splatting}{4}{section.2}%
+\contentsline {section}{\numberline {3}Описание 3D-GS}{4}{section.3}%
+\contentsline {section}{\numberline {4}Incremental Static 3D Gaussians}{4}{section.4}%
+\contentsline {section}{\numberline {5}Приоритет LiDAR с учетом окружающих видов}{6}{section.5}%
+\contentsline {section}{\numberline {6}Глобальный рендеринг через Gaussian Splatting}{7}{section.6}%
