@@ -1,4 +1,4 @@
-Лекции по линейной алгебре 2 семестр: /algebra/lecture.pdf
+[Лекции по линейной алгебре 2 семестр](https://github.com/OperTosik/latex/blob/master/linAlg/lecture.pdf)
 
 В директории packages находятся пакеты для LaTex
 
